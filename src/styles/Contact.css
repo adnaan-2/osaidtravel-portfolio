@@ -1,0 +1,171 @@
+.contact-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+.form-section {
+  flex: 1;
+  padding: 2rem;
+}
+
+.form-header {
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a90e2;
+  margin-bottom: 0.5rem;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  padding-left: 1rem;
+  resize: vertical;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background: #357abd;
+}
+
+.submit-button.success {
+  background: #4caf50;
+}
+
+/* Map and Info Section */
+.info-section {
+  flex: 1;
+  background: #f8f9fa;
+}
+
+.map-container {
+  height: 300px;
+  background: #e9ecef;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.contact-btn:hover {
+  opacity: 0.9;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.call {
+  background: #4a90e2;
+}
+
+.email {
+  background: #7c4dff;
+}
+
+.contact-info {
+  padding: 1.5rem;
+  background: white;
+  border-top: 1px solid #eee;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #4a90e2;
+  border-radius: 50%;
+  color: white;
+}
+
+.info-item p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.info-item small {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-buttons {
+    flex-wrap: wrap;
+  }
+
+  .contact-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

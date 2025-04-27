@@ -1,0 +1,82 @@
+/* Custom styles for Services page */
+.services-page section {
+  padding: 5rem 0;
+}
+
+.services-page section:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+.service-image-container {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.services-page img {
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.services-page img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.services-page .text-primary {
+  color: #2563eb !important;
+}
+
+.services-page .lead {
+  font-weight: 300;
+}
+
+/* Add spacing between sections */
+.services-page section:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.service-image-wrapper {
+  height: 100%;
+}
+
+img.object-fit-cover {
+  object-fit: cover;
+}
+
+/* Fix for aligning text and image heights */
+.services-page .row.align-items-stretch {
+  min-height: 400px;
+}
+
+/* Improve mobile spacing and image display */
+@media (max-width: 992px) {
+  .services-page section {
+    padding: 3rem 0;
+  }
+  
+  .service-image-container {
+    height: 350px;
+    margin-bottom: 2rem;
+  }
+  
+  .services-page .row.align-items-stretch {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-page section {
+    padding: 2.5rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-image-container {
+    height: 250px;
+  }
+}
