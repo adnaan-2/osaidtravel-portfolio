@@ -3,13 +3,24 @@ import React from 'react';
 import '../styles/Pages.css';
 
 const About = () => {
+  const stats = [
+    { number: "1000+", label: "VISA PROCESSED" },
+    { number: "50+", label: "COUNTRIES COVERED" },
+    { number: "20+", label: "AIRLINE PARTNERS" },
+    { number: "200+", label: "HAPPY CLIENTS" },
+    { number: "15+", label: "YEARS EXPERIENCE" },
+    { number: "10+", label: "GLOBAL OFFICES" },
+    { number: "15+", label: "YEARS EXPERIENCE" },
+    { number: "10+", label: "GLOBAL OFFICES" }
+  ];
+
   return (
     <div className="page-container">    
       <div className="about-section">
         <h1>About Our Company</h1>
         <div className="about-content">
           <div className="about-image">
-            <img src="/api/placeholder/400/300" alt="Our Team" />
+            <img src="about.jpg" alt="Our Team" />
           </div>
           <div className="about-text">
             <h2>Our Story</h2>
@@ -30,6 +41,14 @@ const About = () => {
               <li>Teamwork and collaboration</li>
             </ul>
           </div>
+        </div>
+        <div className="stats-section">
+          {stats.map((stat, index) => (
+            <div key={index} className="stat-item">
+              <h3 className="stat-number">{stat.number}</h3>
+              <p className="stat-label">{stat.label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

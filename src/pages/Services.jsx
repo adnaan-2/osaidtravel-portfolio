@@ -7,7 +7,7 @@ export default function Services() {
       title: "Hajj Services",
       subtitle: "Guiding Your Sacred Journey with Care and Devotion.",
       description: "Osaid Travels offers comprehensive Hajj packages designed to provide peace of mind and spiritual focus. From the moment you register to your return home, our experienced team manages everything including flights, accommodations, local transportation, and rituals support. We aim to make this once-in-a-lifetime journey as smooth, safe, and spiritually rewarding as possible.",
-      image: "hajj.jpg",  // Update with your actual image paths
+      image: "hajj.jpg",
       altText: "Hajj Service",
       features: [
         {
@@ -19,6 +19,23 @@ export default function Services() {
           icon: "bi-person-lines-fill",
           title: "Support",
           description: "24/7 guidance and ground assistance throughout your pilgrimage."
+        }
+      ],
+      packages: [
+        {
+          icon: "bi-star-fill",
+          name: "Gold Package",
+          highlight: "Standard comfort"
+        },
+        {
+          icon: "bi-gem",
+          name: "Platinum Package",
+          highlight: "Premium experience"
+        },
+        {
+          icon: "bi-diamond-fill",
+          name: "Diamond Package",
+          highlight: "Luxury services"
         }
       ],
       imageOnLeft: true
@@ -41,6 +58,23 @@ export default function Services() {
           description: "Quick visa processing and streamlined travel arrangements."
         }
       ],
+      packages: [
+        {
+          icon: "bi-star-fill",
+          name: "Gold Package",
+          highlight: "Economy stay"
+        },
+        {
+          icon: "bi-gem",
+          name: "Platinum Package",
+          highlight: "3-star accommodations"
+        },
+        {
+          icon: "bi-diamond-fill",
+          name: "Diamond Package",
+          highlight: "5-star luxury"
+        }
+      ],
       imageOnLeft: false
     },
     {
@@ -59,6 +93,23 @@ export default function Services() {
           icon: "bi-shield-lock-fill",
           title: "Safe",
           description: "Travel with full security measures and experienced staff."
+        }
+      ],
+      packages: [
+        {
+          icon: "bi-calendar-event",
+          name: "3-Day Tour",
+          highlight: "Essential sites"
+        },
+        {
+          icon: "bi-calendar-week",
+          name: "7-Day Tour",
+          highlight: "Complete experience"
+        },
+        {
+          icon: "bi-calendar-month",
+          name: "14-Day Tour",
+          highlight: "Extended journey"
         }
       ],
       imageOnLeft: true
@@ -81,6 +132,23 @@ export default function Services() {
           description: "Fun-filled itineraries packed with unforgettable experiences."
         }
       ],
+      packages: [
+        {
+          icon: "bi-house",
+          name: "Northern Areas",
+          highlight: "Mountain destinations"
+        },
+        {
+          icon: "bi-building",
+          name: "Heritage Tour",
+          highlight: "Historical sites"
+        },
+        {
+          icon: "bi-water",
+          name: "Coastal Package",
+          highlight: "Beach getaways"
+        }
+      ],
       imageOnLeft: false
     },
     {
@@ -99,6 +167,23 @@ export default function Services() {
           icon: "bi-check2-circle",
           title: "Seamless",
           description: "All-inclusive packages that ensure a hassle-free travel experience."
+        }
+      ],
+      packages: [
+        {
+          icon: "bi-globe-europe-africa",
+          name: "European Tour",
+          highlight: "Multiple countries"
+        },
+        {
+          icon: "bi-globe-asia-australia",
+          name: "Asian Tour",
+          highlight: "Cultural exploration"
+        },
+        {
+          icon: "bi-globe-americas",
+          name: "Americas Tour",
+          highlight: "Adventure package"
         }
       ],
       imageOnLeft: true
@@ -121,6 +206,23 @@ export default function Services() {
           description: "Quick and efficient handling of all visa applications."
         }
       ],
+      packages: [
+        {
+          icon: "bi-person-badge",
+          name: "Tourist Visa",
+          highlight: "For travel & leisure"
+        },
+        {
+          icon: "bi-briefcase",
+          name: "Business Visa",
+          highlight: "For corporate travel"
+        },
+        {
+          icon: "bi-mortarboard",
+          name: "Student Visa",
+          highlight: "For education abroad"
+        }
+      ],
       imageOnLeft: false
     },
     {
@@ -141,12 +243,30 @@ export default function Services() {
           description: "Best deals and discounts for flights, trains, and bus tickets."
         }
       ],
+      packages: [
+        {
+          icon: "bi-airplane",
+          name: "Economy Class",
+          highlight: "Affordable travel"
+        },
+        {
+          icon: "bi-airplane-fill",
+          name: "Business Class",
+          highlight: "Premium comfort"
+        },
+        {
+          icon: "bi-star-fill",
+          name: "First Class",
+          highlight: "Luxury experience"
+        }
+      ],
       imageOnLeft: true
     }
   ];
 
   return (
     <div className="services-page">
+      <h1>Services</h1>
       {sections.map((section, index) => (
         <section key={index} className="py-5">
           <div className="container">
@@ -170,6 +290,23 @@ export default function Services() {
                   <h2 className="mb-3 fw-bold">{section.title}</h2>
                   <p className="lead fw-normal text-secondary mb-3">{section.subtitle}</p>
                   <p className="mb-4">{section.description}</p>
+                  
+                  {/* Package Boxes */}
+                  <div className="packages-container mb-4">
+                    <h3 className="h5 mb-3">Available Packages</h3>
+                    <div className="row g-3">
+                      {section.packages.map((pkg, pkgIndex) => (
+                        <div key={pkgIndex} className="col-4">
+                          <div className="package-box text-center p-3 rounded">
+                            <i className={`${pkg.icon} fs-2 mb-2`}></i>
+                            <h4 className="h6 mb-1">{pkg.name}</h4>
+                            <p className="small text-muted mb-0">{pkg.highlight}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
                   <div className="row mt-auto">
                     {section.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="col-12 col-md-6 mb-4">

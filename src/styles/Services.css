@@ -80,3 +80,50 @@ img.object-fit-cover {
     height: 250px;
   }
 }
+
+/* Services.css - Add this to your existing styles */
+
+.packages-container {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.package-box {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.package-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-color: #dee2e6;
+}
+
+.package-box i {
+  color: #2563eb;
+}
+
+.package-box h4 {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.package-box p {
+  font-size: 0.8rem;
+}
+
+/* Different colors for different package types */
+.package-box:nth-child(1) i {
+  color: #f59e0b; /* Gold color */
+}
+
+.package-box:nth-child(2) i {
+  color: #6366f1; /* Platinum color */
+}
+
+.package-box:nth-child(3) i {
+  color: #10b981; /* Diamond/emerald color */
+}
