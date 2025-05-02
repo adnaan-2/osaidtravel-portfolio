@@ -1,5 +1,6 @@
 .contact-container {
   max-width: 1200px;
+  width: 100%;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -66,6 +67,9 @@ textarea {
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .submit-button:hover {
@@ -74,6 +78,52 @@ textarea {
 
 .submit-button.success {
   background: #4caf50;
+  background-color: #4CAF50;
+  color: white;
+  transform: scale(1.05);
+}
+
+.submit-button.error {
+  background-color: #f44336;
+  color: white;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+.form-feedback {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  animation: slideIn 0.3s ease-out;
+  z-index: 1000;
+}
+
+.form-feedback.success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.form-feedback.error {
+  background-color: #f44336;
+  color: white;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /* Map and Info Section */

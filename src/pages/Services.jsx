@@ -97,19 +97,19 @@ export default function Services() {
       ],
       packages: [
         {
-          icon: "bi-calendar-event",
-          name: "3-Day Tour",
-          highlight: "Essential sites"
+          icon: "bi-building-fill-check", // Changed to represent Karbala shrine
+          name: "Karbala Package",
+          highlight: "Sacred shrine of Imam Hussain (A.S)"
         },
         {
-          icon: "bi-calendar-week",
-          name: "7-Day Tour",
-          highlight: "Complete experience"
+          icon: "bi-building-fill-up", // Changed to represent Najaf shrine
+          name: "Najaf Package",
+          highlight: "Shrine of Imam Ali (A.S)"
         },
         {
-          icon: "bi-calendar-month",
-          name: "14-Day Tour",
-          highlight: "Extended journey"
+          icon: "bi-bank2", // Changed to represent historical sites
+          name: "Baghdad Package",
+          highlight: "Historical Islamic sites"
         }
       ],
       imageOnLeft: true

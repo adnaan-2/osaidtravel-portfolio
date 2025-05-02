@@ -1,22 +1,44 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import '../styles/Footer.css';
 
 export default function Footer() {
   return (
-    <div>
-      <h1>Footer</h1>
-        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
-        <div className="footer-links">
-          <a href="/">Privacy Policy</a>
-          <a href="/">Terms of Service</a>
-          <a href="/">Sitemap</a>
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="footer-logo">
+          <img src="/logo.png" alt="Osaid Travel" className="logo" />
+        </div>
+        
+        <nav className="footer-links">
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/services">Our Services</Link>
+          <Link to="/contact">Contact Us</Link>
+        </nav>
+
+        <div className="footer-social">
+          <div className="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100066246022889" target="_blank" rel="noopener noreferrer">
+              <Facebook size={40} />
+            </a>
+            <a href="https://www.threads.com/@osaid_106travelandtour" target="_blank" rel="noopener noreferrer">
+              <Twitter size={40} />
+            </a>
+            <a href="https://www.instagram.com/osaid_106travelandtour/?hl=en" target="_blank" rel="noopener noreferrer">
+              <Instagram size={40} />
+            </a>
+            <a href="https://www.linkedin.com/in/osaid-travel-7644a3341/" target="_blank" rel="noopener noreferrer">
+              <Linkedin size={40} />
+            </a>
           </div>
-        <p>Follow us on social media:</p>
-        <div className="social-media-links">
-          <a href="/">Facebook</a>
-          <a href="/">Twitter</a>
-          <a href="/">Instagram</a> 
-          </div>
-          
-    </div>
-  )
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} Osaid Travel. All rights reserved.</p>
+      </div>
+    </footer>
+  );
 }

@@ -3,11 +3,11 @@ import '../styles/Home.css'; // Import your CSS styles
 
 const HeroSection = () => {
   const slides = [
-    { image: 'hajj.jpg', headline: 'Journey of a Lifetime', text: 'Experience the spiritual journey with our comprehensive Hajj packages Enjoy premium accommodations and transportation services' },
-    { image: 'umrah.jpg', headline: 'Sacred Locations', text: 'Visit the most revered sites in Islam with expert guidance Enjoy premium accommodations and transportation services' },
-    { image: 'ziarrat.jpg', headline: 'Comfortable Travel', text: 'Enjoy premium accommodations and transportation services Enjoy premium accommodations and transportation services' },
-    { image: 'domastic.jpg', headline: 'Group Pilgrimages', text: 'Travel with like-minded believers in our group packages Enjoy premium accommodations and transportation services' },
-    { image: 'international.jpg', headline: 'International Journeys', text: 'Explore sacred sites worldwide with our experienced guides Enjoy premium accommodations and transportation services' }
+    { image: 'hajj1.jpg', headline: 'Embark on a Sacred Journey of Faith.', text: 'Experience the spiritual journey with our comprehensive Hajj packages Enjoy premium accommodations and transportation services' },
+    { image: 'umrah1.jpg', headline: 'Experience Spiritual Serenity with Umrah.', text: 'Visit the most revered sites in Islam with expert guidance Enjoy premium accommodations and transportation services' },
+    { image: 'ziarrat1.jpg', headline: 'Discover the Blessed Path of Holy Pilgrimage', text: 'Enjoy premium accommodations and transportation services Enjoy premium accommodations and transportation services' },
+    { image: 'domastic1.jpg', headline: 'Explore Pakistan’s Hidden Gems.', text: 'Travel with like-minded believers in our group packages Enjoy premium accommodations and transportation services' },
+    { image: 'international1.jpg', headline: 'Adventure Awaits Beyond Borders.', text: 'Explore sacred sites worldwide with our experienced guides Enjoy premium accommodations and transportation services' }
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

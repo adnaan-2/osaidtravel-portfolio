@@ -67,7 +67,7 @@
 .slide-content {
   position: absolute;
   top: 50%;
-  left: 31%;
+  left: 30%;
   transform: translate(-50%, -50%);
   text-align: left;
   color: white;
@@ -291,8 +291,30 @@
     font-size: 1rem;
     padding: 0.75rem;
   }
+
+  .slide-content {
+    left: 50%; /* Center the content */
+    width: 90%;
+    padding: 1rem;
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  }
+
+  .hero-slide.active .slide-headline {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+    width: 100%; /* Full width */
+    word-wrap: break-word; /* Wrap long words */
+    padding: 0.5rem;
+  }
+
+  .hero-slide.active .slide-text {
+    font-size: 1.2rem;
+    width: 100%;
+    word-wrap: break-word;
+    padding: 0.5rem;
+  }
 }
 
+/* Even smaller screens */
 @media (max-width: 480px) {
   .nav-arrow {
     width: 2rem;
@@ -313,6 +335,60 @@
   .slide-button {
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
+  }
+
+  .slide-content {
+    width: 68%; /* Increased from 70% to use more horizontal space */
+    padding: 0.5rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slide-headline {
+    font-size: 100%; /* Slightly smaller font */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%; /* Full width to maximize space */
+    text-align: center;
+  }
+
+  .slide-text {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Ensure content stays within viewport */
+  .slide-headline,
+  .slide-text {
+    max-width: 100%;
+    width: 100%; /* Changed from 80% to use full width */
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    display: block; /* Changed from inline-block */
+  }
+
+  .slide-button {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .hero-slide.active .slide-headline {
+    font-size: 1.8rem;
+    width: 100%;
+    font-size: 40px;
+  }
+
+  .hero-slide.active .slide-text {
+    font-size: 1rem;
+    width: 100%;
+    font-size: 20px;
   }
 }
 

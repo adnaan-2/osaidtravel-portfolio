@@ -16,6 +16,8 @@ export default function ContactSection() {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [feedbackMessage, setFeedbackMessage] = useState('');
+  const [feedbackType, setFeedbackType] = useState(''); // 'success' or 'error'
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -31,17 +33,21 @@ export default function ContactSection() {
 
     // Replace these with your EmailJS credentials
     emailjs.sendForm(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
+      'service_bz08rlr',
+      'template_tgdxmf8',
       form.current,
-      'YOUR_PUBLIC_KEY'
+      'lbKoFi9Yq0FAtU6Hn'
     )
     .then((result) => {
       setIsSubmitted(true);
+      setFeedbackType('success');
+      setFeedbackMessage('Message sent successfully!');
       setIsLoading(false);
+      
       // Reset form after 3 seconds
       setTimeout(() => {
         setIsSubmitted(false);
+        setFeedbackMessage('');
         setFormData({
           name: '',
           email: '',
@@ -54,12 +60,25 @@ export default function ContactSection() {
     }, (error) => {
       console.log(error.text);
       setIsLoading(false);
-      alert('Failed to send message. Please try again.');
+      setFeedbackType('error');
+      setFeedbackMessage('Failed to send message. Please try again.');
+      
+      // Clear error message after 3 seconds
+      setTimeout(() => {
+        setFeedbackMessage('');
+      }, 3000);
     });
   };
 
   return (
     <div className="contact-container">
+      {/* Feedback Message */}
+      {feedbackMessage && (
+        <div className={`form-feedback ${feedbackType}`}>
+          {feedbackMessage}
+        </div>
+      )}
+
       <div className="contact-wrapper">
         <div className="form-section">
           <div className="form-header">
@@ -152,10 +171,12 @@ export default function ContactSection() {
 
             <button 
               type="submit" 
-              className={`submit-button ${isSubmitted ? 'success' : ''}`}
+              className={`submit-button ${isSubmitted ? 'success' : ''} ${
+                feedbackType === 'error' ? 'error' : ''
+              }`}
               disabled={isLoading}
             >
-              {isLoading ? 'Sending...' : isSubmitted ? 'Message Sent!' : 'SUBMIT'}
+              {isLoading ? 'Sending...' : isSubmitted ? '✓ Sent!' : 'SUBMIT'}
             </button>
           </form>
         </div>
@@ -177,7 +198,7 @@ export default function ContactSection() {
 
           <div className="contact-buttons">
             <a 
-              href="https://wa.me/1234567890" 
+              href="https://wa.me/03235682225" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="contact-btn whatsapp"
@@ -187,7 +208,7 @@ export default function ContactSection() {
             </a>
 
             <a 
-              href="tel:+1234567890" 
+              href="tel:+923235682225" 
               className="contact-btn call"
             >
               <Phone size={20} />
@@ -195,7 +216,7 @@ export default function ContactSection() {
             </a>
 
             <a 
-              href="mailto:info@example.com" 
+              href="mailto:osaidtraveltours@gmail.com" 
               className="contact-btn email"
             >
               <Mail size={20} />
@@ -229,8 +250,8 @@ export default function ContactSection() {
                 <Mail size={24} />
               </div>
               <div>
-                <p>info@gmail.com</p>
-                <small>sales@gmail.com</small>
+                <p>info</p>
+                <small>osiadtraveltours@gmail.com</small>
               </div>
             </div>
           </div>

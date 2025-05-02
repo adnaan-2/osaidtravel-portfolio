@@ -1,60 +1,76 @@
 import { useState, useRef } from 'react';
-import '../styles/Reviews.css'; // Assuming you have a CSS file for styling
+import '../styles/Reviews.css';
 
 const testimonials = [
   {
     id: 1,
-    content: "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    author: "Sabo Masties",
-    position: "Founder @ Rolex",
+    content: "My Hajj experience with Osaid Travel was truly blessed. The arrangements were perfect, from accommodation near Haram to the guidance during rituals. Their attention to detail made this sacred journey smooth and spiritually fulfilling.",
+    author: "Muhammad Ahmed",
+    position: "Hajj Package",
     avatar: "me2.jpeg",
     rating: 5
   },
   {
     id: 2,
-    content: "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    author: "Musharof Chowdhury",
-    position: "Founder @ Ayro UI",
+    content: "Excellent Umrah services! The hotel was just steps away from Masjid al-Haram, and their representatives were always available for support. The package was worth every penny.",
+    author: "Fatima Ibrahim",
+    position: "Umrah Package",
     avatar: "me2.jpeg",
     rating: 5
   },
   {
     id: 3,
-    content: "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    author: "William Smith",
-    position: "Founder @ Tronex",
+    content: "The Ziyarat tour to Karbala and Najaf was incredibly well-organized. The spiritual guides were knowledgeable, and the accommodation arrangements were comfortable. A memorable experience.",
+    author: "Hassan Ali",
+    position: "Ziyarat Tour",
     avatar: "me2.jpeg",
     rating: 5
   },
   {
     id: 4,
-    content: "The service exceeded all our expectations. The team was responsive and delivered on time.",
-    author: "Sarah Johnson",
-    position: "CEO @ TechStar",
+    content: "Our family trip to northern areas was fantastic! The itinerary covered all major spots, hotels were comfortable, and the guide was excellent. Highly recommend their domestic tour packages.",
+    author: "Ayesha Khan",
+    position: "Domestic Tour",
     avatar: "me2.jpeg",
     rating: 5
   },
   {
     id: 5,
-    content: "We've seen tremendous results since implementing their solution. Highly recommended!",
-    author: "Mark Davis",
-    position: "CTO @ InnovateCorp",
+    content: "The Europe tour package was amazing! Everything from visa assistance to local transportation was perfectly arranged. The hotels were great and the itinerary covered all major attractions.",
+    author: "Usman Malik",
+    position: "International Tour",
     avatar: "me2.jpeg",
     rating: 5
   },
   {
     id: 6,
-    content: "We've seen tremendous results since implementing their solution. Highly recommended!",
-    author: "Mark Davis",
-    position: "CTO @ InnovateCorp",
+    content: "Quick and efficient visa processing for my UK trip. The team handled all documentation professionally and kept me updated throughout the process. Will definitely use their services again.",
+    author: "Zainab Ahmed",
+    position: "Visa Services",
     avatar: "me2.jpeg",
     rating: 5
   },
   {
     id: 7,
-    content: "We've seen tremendous results since implementing their solution. Highly recommended!",
-    author: "Mark Davis",
-    position: "CTO @ InnovateCorp",
+    content: "Got great deals on flight tickets through Osaid Travel. Their quick response and professional handling of last-minute changes was impressive. Reliable ticketing service!",
+    author: "Omar Shah",
+    position: "Ticketing Service",
+    avatar: "me2.jpeg",
+    rating: 5
+  },
+  {
+    id: 8,
+    content: "The Dubai package was perfect for our family vacation. Great hotel selection, exciting desert safari, and well-planned city tours. Everything was organized perfectly.",
+    author: "Saira Nasir",
+    position: "International Tour",
+    avatar: "me2.jpeg",
+    rating: 5
+  },
+  {
+    id: 9,
+    content: "Exceptional service for our corporate travel needs. Their team is professional, responsive, and always finds the best deals. A reliable travel partner for our company.",
+    author: "Imran Khan",
+    position: "Corporate Travel",
     avatar: "me2.jpeg",
     rating: 5
   }
@@ -115,18 +131,18 @@ const Reviews = () => {
       >
         {getVisibleTestimonials().map((testimonial) => (
           <div key={testimonial.id} className="testimonial-card">
-            <div className="rating">
-              {renderStars(testimonial.rating)}
-            </div>
-            <p className="testimonial-content">{testimonial.content}</p>
-            <div className="testimonial-author">
+            <div className="testimonial-header">
+              <div className="author-info">
+                <h4>{testimonial.author}</h4>
+                <p className="position">{testimonial.position}</p>
+              </div>
               <div className="author-avatar">
                 <img src={testimonial.avatar} alt={testimonial.author} />
               </div>
-              <div className="author-info">
-                <h4>{testimonial.author}</h4>
-                <p>{testimonial.position}</p>
-              </div>
+            </div>
+            <p className="testimonial-content">{testimonial.content}</p>
+            <div className="rating">
+              {renderStars(testimonial.rating)}
             </div>
           </div>
         ))}
