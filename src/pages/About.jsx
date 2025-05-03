@@ -7,11 +7,11 @@ const About = () => {
     { number: "1000+", label: "VISA PROCESSED" },
     { number: "50+", label: "COUNTRIES COVERED" },
     { number: "20+", label: "AIRLINE PARTNERS" },
-    { number: "200+", label: "HAPPY CLIENTS" },
+    { number: "1000+", label: "HAPPY CLIENTS" },
     { number: "15+", label: "YEARS EXPERIENCE" },
-    { number: "10+", label: "GLOBAL OFFICES" },
-    { number: "15+", label: "YEARS EXPERIENCE" },
-    { number: "10+", label: "GLOBAL OFFICES" }
+    { number: "2", label: "Functional Offices" },
+    { number: "11+", label: "YEARS EXPERIENCE" },
+    { number: "40+", label: "Staff Members" },
   ];
 
   return (
@@ -23,23 +23,17 @@ const About = () => {
             <img src="about.jpg" alt="Our Team" />
           </div>
           <div className="about-text">
-            <h2>Our Story</h2>
+            <h2>Osaid Travel & Tours</h2>
             <p>
-              Founded in 2015, our company has been dedicated to providing exceptional services to our clients. 
-              We started with a small team of passionate professionals and have grown to become a trusted name in the industry.
+            Osaid Travel & Tours has been proudly serving clients since 2014, specializing in Hajj and Umrah services, along with a full range of domestic and international tourism, visa processing, and ticketing services for both domestic and international flights.
+            Headquartered in <u>Rawalpindi</u> with a branch office in <u>Multan</u>. <br />We have built a trusted network through B2B joint ventures with travel agents and agencies across Pakistan. 
+            We also maintain strong partnerships with hotels in the holy cities of Makkah and Madina, ensuring our pilgrims receive reliable, comfortable, 
+            and spiritually enriching experiences. <br />
+            
+            Our mission is to deliver innovative solutions that help our clients achieve their goals and overcome challenges.
+            We believe in building strong relationships based on trust, integrity, and mutual respect.
             </p>
-            <p>
-              Our mission is to deliver innovative solutions that help our clients achieve their goals and overcome challenges.
-              We believe in building strong relationships based on trust, integrity, and mutual respect.
-            </p>
-            <h2>Our Values</h2>
-            <ul>
-              <li>Excellence in all we do</li>
-              <li>Customer satisfaction</li>
-              <li>Integrity and transparency</li>
-              <li>Continuous improvement</li>
-              <li>Teamwork and collaboration</li>
-            </ul>
+          
           </div>
         </div>
         <div className="stats-section">

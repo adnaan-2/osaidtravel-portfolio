@@ -7,7 +7,7 @@ export default function Services() {
       title: "Hajj Services",
       subtitle: "Guiding Your Sacred Journey with Care and Devotion.",
       description: "Osaid Travels offers comprehensive Hajj packages designed to provide peace of mind and spiritual focus. From the moment you register to your return home, our experienced team manages everything including flights, accommodations, local transportation, and rituals support. We aim to make this once-in-a-lifetime journey as smooth, safe, and spiritually rewarding as possible.",
-      image: "hajj.jpg",
+      image: "hajj1.jpg",
       altText: "Hajj Service",
       features: [
         {
@@ -44,7 +44,7 @@ export default function Services() {
       title: "Umrah Services",
       subtitle: "Your Blessed Umrah, Perfectly Planned.",
       description: "With deep respect for the spiritual importance of Umrah, we provide complete solutions—from visa processing and hotel bookings to guided services near Haram. Whether you're going alone or with family, Osaid Travels makes your pilgrimage comfortable, timely, and worry-free with attention to every sacred detail.",
-      image: "umrah.jpg",
+      image: "umrah1.jpg",
       altText: "Umrah Service",
       features: [
         {
@@ -60,19 +60,19 @@ export default function Services() {
       ],
       packages: [
         {
-          icon: "bi-star-fill",
-          name: "Gold Package",
-          highlight: "Economy stay"
+          icon: "bi-house-door",
+          name: "Economy Package",
+          highlight: "Budget Friendly"
         },
         {
-          icon: "bi-gem",
-          name: "Platinum Package",
-          highlight: "3-star accommodations"
+          icon: "bi-house-door-fill",
+          name: "Economy Plus",
+          highlight: "Comfort stay"
         },
         {
-          icon: "bi-diamond-fill",
-          name: "Diamond Package",
-          highlight: "5-star luxury"
+          icon: "bi-building-fill",
+          name: "Premium Package",
+          highlight: "3-4-5 star luxury hotels"
         }
       ],
       imageOnLeft: false
@@ -81,7 +81,7 @@ export default function Services() {
       title: "Ziyarat Services",
       subtitle: "Walk the Sacred Paths with Us.",
       description: "Visit the revered Islamic heritage sites across cities like Karbala, Najaf, Mashhad, and more. Our Ziyarat packages combine spiritual depth with expert planning, ensuring a meaningful and respectful journey. Let us handle the logistics while you focus on reflection and prayer.",
-      image: "ziarrat.jpg",
+      image: "ziarrat1.jpg",
       altText: "Ziyarat Service",
       features: [
         {
@@ -99,17 +99,17 @@ export default function Services() {
         {
           icon: "bi-building-fill-check", // Changed to represent Karbala shrine
           name: "Karbala Package",
-          highlight: "Sacred shrine of Imam Hussain (A.S)"
+          highlight: "shrine of Imam Hussain رَضِیَ اللہُ تَعَالٰی عَنْہ"
         },
         {
           icon: "bi-building-fill-up", // Changed to represent Najaf shrine
           name: "Najaf Package",
-          highlight: "Shrine of Imam Ali (A.S)"
+          highlight: "Shrine of Imam Hazrat Ali رَضِیَ اللہُ تَعَالٰی عَنْہ"
         },
         {
           icon: "bi-bank2", // Changed to represent historical sites
           name: "Baghdad Package",
-          highlight: "Historical Islamic sites"
+          highlight: "shrine of Ghaus e Azam رَحْمَتُ اللہ عَلَیہ"
         }
       ],
       imageOnLeft: true
@@ -118,7 +118,7 @@ export default function Services() {
       title: "Domestic Tours",
       subtitle: "Discover the Beauty of Home with Ease.",
       description: "Explore the hidden gems and famous destinations across your own country with comfort and convenience. From mountains to beaches, heritage cities to adventure spots—our tours are designed to give you unforgettable experiences without going far. Great for families, couples, or solo travelers.",
-      image: "domastic.jpg",
+      image: "domastic1.jpg",
       altText: "Domestic Tours",
       features: [
         {
@@ -155,7 +155,7 @@ export default function Services() {
       title: "International Tours",
       subtitle: "Explore the World, Effortlessly with Osaid.",
       description: "Travel beyond borders with our all-inclusive international tour packages. Whether it's Europe, Asia, the Middle East or the Americas, we take care of everything—flights, hotels, sightseeing, and visa help—so you can enjoy every destination with peace of mind and excitement.",
-      image: "international.jpg",
+      image: "international1.jpg",
       altText: "International Tours",
       features: [
         {
@@ -270,22 +270,21 @@ export default function Services() {
       {sections.map((section, index) => (
         <section key={index} className="py-5">
           <div className="container">
-            <div className="row align-items-stretch">
-              {/* Conditionally render image on left or right based on imageOnLeft property */}
-              {section.imageOnLeft && (
-                <div className="col-12 col-lg-6 mb-4 mb-lg-0 d-flex align-items-stretch">
-                  <div className="service-image-container h-100 w-100">
-                    <img 
-                      src={section.image} 
-                      alt={section.altText}
-                      className="img-fluid rounded shadow h-100 w-100 object-fit-cover" 
-                      loading="lazy"
-                    />
-                  </div>
+            <div className="row align-items-stretch service-row">
+              {/* Image Section - Always first on mobile */}
+              <div className={`col-12 col-lg-6 mb-4 mb-lg-0 d-flex align-items-stretch order-1 ${section.imageOnLeft ? 'order-lg-1' : 'order-lg-2'}`}>
+                <div className="service-image-container h-100 w-100">
+                  <img 
+                    src={section.image} 
+                    alt={section.altText}
+                    className="img-fluid rounded shadow h-100 w-100 object-fit-cover" 
+                    loading="lazy"
+                  />
                 </div>
-              )}
+              </div>
               
-              <div className="col-12 col-lg-6 d-flex flex-column">
+              {/* Content Section - Always second on mobile */}
+              <div className={`col-12 col-lg-6 d-flex flex-column order-2 ${section.imageOnLeft ? 'order-lg-2' : 'order-lg-1'}`}>
                 <div className="p-3 p-md-4 h-100 d-flex flex-column">
                   <h2 className="mb-3 fw-bold">{section.title}</h2>
                   <p className="lead fw-normal text-secondary mb-3">{section.subtitle}</p>
@@ -307,6 +306,7 @@ export default function Services() {
                     </div>
                   </div>
                   
+                  {/* Features Section */}
                   <div className="row mt-auto">
                     {section.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="col-12 col-md-6 mb-4">
@@ -324,20 +324,6 @@ export default function Services() {
                   </div>
                 </div>
               </div>
-              
-              {/* Conditionally render image on right if imageOnLeft is false */}
-              {!section.imageOnLeft && (
-                <div className="col-12 col-lg-6 mb-4 mb-lg-0 d-flex align-items-stretch">
-                  <div className="service-image-container h-100 w-100">
-                    <img 
-                      src={section.image} 
-                      alt={section.altText}
-                      className="img-fluid rounded shadow h-100 w-100 object-fit-cover" 
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         </section>

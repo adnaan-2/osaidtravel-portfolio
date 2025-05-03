@@ -13,6 +13,29 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+.b2b-container {
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.b2b-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.form-wrapper {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
 /* Form Section */
 .form-section {
   flex: 1;
@@ -21,14 +44,15 @@
 
 .form-header {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .form-header h2 {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
-  color: #4a90e2;
-  margin-bottom: 0.5rem;
+  color: #333;
 }
 
 .input-group {
@@ -57,34 +81,72 @@ textarea {
   resize: vertical;
 }
 
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input-group textarea {
+  padding-left: 1rem;
+  resize: vertical;
+}
+
+.file-input-wrapper {
+  position: relative;
+}
+
+.file-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-input:disabled + .file-label {
+  background-color: #e9ecef;
+  cursor: wait;
+}
+
+.file-label {
+  display: block;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #666;
+}
+
 .submit-button {
   width: 100%;
-  padding: 0.75rem;
-  background: #4a90e2;
+  padding: 1rem;
+  background-color: #2563eb;
   color: white;
   border: none;
   border-radius: 4px;
-  font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
-  position: relative;
-  transition: all 0.3s ease;
-  overflow: hidden;
+  transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
-  background: #357abd;
+  background-color: #1d4ed8;
 }
 
 .submit-button.success {
   background: #4caf50;
-  background-color: #4CAF50;
+  background-color: #10b981;
   color: white;
   transform: scale(1.05);
 }
 
 .submit-button.error {
-  background-color: #f44336;
+  background-color: #ef4444;
   color: white;
   animation: shake 0.5s ease-in-out;
 }
@@ -106,12 +168,12 @@ textarea {
 }
 
 .form-feedback.success {
-  background-color: #4CAF50;
+  background-color: #10b981;
   color: white;
 }
 
 .form-feedback.error {
-  background-color: #f44336;
+  background-color: #ef4444;
   color: white;
 }
 
@@ -205,6 +267,117 @@ textarea {
   color: #666;
 }
 
+/* Two column layout styles */
+.b2b-container {
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.b2b-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Form column styles */
+.form-column {
+  padding: 2rem;
+}
+
+/* Info column styles */
+.info-column {
+  background: #f8f9fa;
+  padding: 2rem;
+}
+
+.info-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.info-text {
+  color: #333;
+}
+
+.info-text h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #2563eb;
+}
+
+.info-text ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.info-text li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.info-text li i {
+  color: #10b981;
+}
+
+.contact-info {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.contact-info h4 {
+  margin-bottom: 1rem;
+  color: #2563eb;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info i {
+  color: #2563eb;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .b2b-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .info-column {
+    order: -1;
+  }
+
+  .b2b-container {
+    padding: 2rem 1rem;
+  }
+
+  .form-column,
+  .info-column {
+    padding: 1.5rem;
+  }
+
+  .info-image {
+    height: 250px;
+  }
+}
+
 @media (max-width: 768px) {
   .contact-wrapper {
     flex-direction: column;
@@ -217,5 +390,13 @@ textarea {
   .contact-btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .b2b-container {
+    padding: 2rem 1rem;
+  }
+
+  .form-section {
+    padding: 1.5rem;
   }
 }

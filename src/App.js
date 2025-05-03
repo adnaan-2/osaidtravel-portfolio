@@ -14,6 +14,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Reviews from './pages/Reviews';
 import Contact from './pages/Contact';
+import B2B from './pages/B2B';  
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services/>} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="/b2b" element={<B2B />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

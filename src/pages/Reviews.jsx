@@ -5,32 +5,32 @@ const testimonials = [
   {
     id: 1,
     content: "My Hajj experience with Osaid Travel was truly blessed. The arrangements were perfect, from accommodation near Haram to the guidance during rituals. Their attention to detail made this sacred journey smooth and spiritually fulfilling.",
-    author: "Muhammad Ahmed",
-    position: "Hajj Package",
-    avatar: "me2.jpeg",
+    author: "Umar Sajjad",
+    position: "Northen Area Package",
+    avatar: "r3.jpeg",
     rating: 5
   },
   {
     id: 2,
     content: "Excellent Umrah services! The hotel was just steps away from Masjid al-Haram, and their representatives were always available for support. The package was worth every penny.",
-    author: "Fatima Ibrahim",
-    position: "Umrah Package",
-    avatar: "me2.jpeg",
+    author: "Nadeem Ashiq",
+    position: "Ummrah Package",
+    avatar: "r2.jpeg",
     rating: 5
   },
   {
     id: 3,
     content: "The Ziyarat tour to Karbala and Najaf was incredibly well-organized. The spiritual guides were knowledgeable, and the accommodation arrangements were comfortable. A memorable experience.",
-    author: "Hassan Ali",
+    author: "Hussnain",
     position: "Ziyarat Tour",
-    avatar: "me2.jpeg",
+    avatar: "r1.jpg",
     rating: 5
   },
   {
     id: 4,
     content: "Our family trip to northern areas was fantastic! The itinerary covered all major spots, hotels were comfortable, and the guide was excellent. Highly recommend their domestic tour packages.",
-    author: "Ayesha Khan",
-    position: "Domestic Tour",
+    author: "Adnan khalil",
+    position: "Kashmir Tour",
     avatar: "me2.jpeg",
     rating: 5
   },
@@ -39,15 +39,15 @@ const testimonials = [
     content: "The Europe tour package was amazing! Everything from visa assistance to local transportation was perfectly arranged. The hotels were great and the itinerary covered all major attractions.",
     author: "Usman Malik",
     position: "International Tour",
-    avatar: "me2.jpeg",
+    avatar: "r3.jpeg",
     rating: 5
   },
   {
     id: 6,
     content: "Quick and efficient visa processing for my UK trip. The team handled all documentation professionally and kept me updated throughout the process. Will definitely use their services again.",
-    author: "Zainab Ahmed",
+    author: "Zeeshan Ahmed",
     position: "Visa Services",
-    avatar: "me2.jpeg",
+    avatar: "r2.jpeg",
     rating: 5
   },
   {
@@ -55,13 +55,13 @@ const testimonials = [
     content: "Got great deals on flight tickets through Osaid Travel. Their quick response and professional handling of last-minute changes was impressive. Reliable ticketing service!",
     author: "Omar Shah",
     position: "Ticketing Service",
-    avatar: "me2.jpeg",
+    avatar: "r2.jpeg",
     rating: 5
   },
   {
     id: 8,
     content: "The Dubai package was perfect for our family vacation. Great hotel selection, exciting desert safari, and well-planned city tours. Everything was organized perfectly.",
-    author: "Saira Nasir",
+    author: "Khaid Nasir",
     position: "International Tour",
     avatar: "me2.jpeg",
     rating: 5
@@ -117,7 +117,7 @@ const Reviews = () => {
   return (
     <section className="testimonials-section">
       <div className="testimonials-header">
-        <h2>Testimonials</h2>
+  
         <h2>What our Clients Says</h2>
         <p>
           There are many variations of passages of Lorem Ipsum available

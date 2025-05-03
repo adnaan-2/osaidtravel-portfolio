@@ -34,7 +34,7 @@ export default function ContactSection() {
     // Replace these with your EmailJS credentials
     emailjs.sendForm(
       'service_bz08rlr',
-      'template_tgdxmf8',
+      'template_dlh3hdo',
       form.current,
       'lbKoFi9Yq0FAtU6Hn'
     )
@@ -198,7 +198,7 @@ export default function ContactSection() {
 
           <div className="contact-buttons">
             <a 
-              href="https://wa.me/03235682225" 
+              href="https://wa.me/+923235682225" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="contact-btn whatsapp"

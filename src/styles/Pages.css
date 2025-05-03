@@ -119,14 +119,11 @@
   }
   
   .about-text p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.6;
+    font-size: 20px;
   }
   
-  .about-text ul {
-    padding-left: 20px;
-    line-height: 1.8;
-  }
   
   /* Packages Page */
   .packages-grid {

@@ -67,17 +67,113 @@ img.object-fit-cover {
   .services-page .row.align-items-stretch {
     min-height: auto;
   }
+
+  .services-page .row {
+    display: flex;
+    flex-direction: column !important; /* Force column layout */
+  }
+
+  .service-image-container {
+    width: 100%;
+  }
+
+  /* Force image column to always appear first */
+  .services-page .row > div:first-child {
+    order: 1 !important;
+  }
+
+  /* Force content column to always appear second */
+  .services-page .row > div:last-child {
+    order: 2 !important;
+  }
+
+  .services-page .text-content {
+    padding: 0 1rem;
+  }
+
+  .service-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-row > div {
+    width: 100%;
+  }
+
+  .packages-container .row {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0.5rem 0;
+    margin: 0 -0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .packages-container .col-4 {
+    flex: 0 0 auto;
+    width: 160px;
+    padding: 0 0.5rem;
+  }
+
+  .package-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .package-box i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .package-box h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .package-box p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .packages-container .row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .packages-container .row {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 
 @media (max-width: 768px) {
   .services-page section {
     padding: 2.5rem 0;
   }
+
+  .services-page section {
+    padding: 2rem 0;
+  }
+
+  .service-image-container {
+    height: 300px;
+  }
 }
 
 @media (max-width: 576px) {
   .service-image-container {
     height: 250px;
+  }
+
+  .services-page .text-content {
+    padding: 0 0.5rem;
   }
 }
 
@@ -92,7 +188,6 @@ img.object-fit-cover {
   background-color: #f8f9fa;
   border: 1px solid #e9ecef;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  height: 100%;
   transition: all 0.2s ease-in-out;
 }
 
@@ -115,15 +210,8 @@ img.object-fit-cover {
   font-size: 0.8rem;
 }
 
-/* Different colors for different package types */
+
+
 .package-box:nth-child(1) i {
-  color: #f59e0b; /* Gold color */
-}
-
-.package-box:nth-child(2) i {
-  color: #6366f1; /* Platinum color */
-}
-
-.package-box:nth-child(3) i {
   color: #10b981; /* Diamond/emerald color */
 }

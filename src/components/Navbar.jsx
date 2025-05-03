@@ -42,11 +42,14 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/reviews" className="nav-link" onClick={() => setIsOpen(false)}>Reviews</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/b2b" className="nav-link" onClick={() => setIsOpen(false)}>B2B</Link>
+          </li>
         </ul>
 
         {/* Right - Contact Us */}
         <div className={isOpen ? 'contact-button active' : 'contact-button'}>
-          <Link to="/contact" className="contact-link" onClick={() => setIsOpen(false)}>Contact Us</Link>
+          <Link to="/contact" className="contact-link" onClick={() => setIsOpen(false)}>Ask Your Query</Link>
         </div>
       </div>
     </nav>
