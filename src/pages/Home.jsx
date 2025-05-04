@@ -10,15 +10,25 @@ import About from '../pages/About';
 const Home = () => {
   return (
     <div className="home-container">
-      <HeroSection />
-      <About />
-      <Services />
-      <Reviews />
+      <section id="home">
+        <HeroSection />
+      </section>
       
-      <ContactSection />
-       
-
+      <section id="about">
+        <About />
+      </section>
       
+      <section id="services">
+        <Services />
+      </section>
+      
+      <section id="reviews">
+        <Reviews />
+      </section>
+      
+      <section id="contact">
+        <ContactSection />
+      </section>
     </div>
   );
 };

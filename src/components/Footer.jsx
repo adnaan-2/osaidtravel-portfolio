@@ -1,9 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { useLocation, Link } from 'react-router-dom';
+import { Facebook, Instagram, Linkedin, Share2 } from 'lucide-react';
 import '../styles/Footer.css';
 
 export default function Footer() {
+  const location = useLocation();
+
+  const scrollToSection = (sectionId) => {
+    if (location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -12,25 +29,29 @@ export default function Footer() {
         </div>
         
         <nav className="footer-links">
-          <Link to="/">Home</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/services">Our Services</Link>
-          <Link to="/contact">Contact Us</Link>
+          <button onClick={() => scrollToSection('home')} className="footer-link">Home</button>
+          <button onClick={() => scrollToSection('about')} className="footer-link">About</button>
+          <button onClick={() => scrollToSection('services')} className="footer-link">Services</button>
+          <button onClick={() => scrollToSection('reviews')} className="footer-link">Reviews</button>
+          <button onClick={() => scrollToSection('contact')} className="footer-link">Contact</button>
+          <Link to="/blogs" className="footer-link">Blogs</Link>
+          <Link to="/b2b" className="footer-link">B2B</Link>
         </nav>
 
         <div className="footer-social">
+          <h3 className="social-title">Follow Us</h3>
           <div className="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100066246022889" target="_blank" rel="noopener noreferrer">
+            <a href="https://facebook.com/osaidtravel" target="_blank" rel="noopener noreferrer">
               <Facebook size={40} />
             </a>
-            <a href="https://www.threads.com/@osaid_106travelandtour" target="_blank" rel="noopener noreferrer">
-              <Twitter size={40} />
-            </a>
-            <a href="https://www.instagram.com/osaid_106travelandtour/?hl=en" target="_blank" rel="noopener noreferrer">
+            <a href="https://instagram.com/osaidtravel" target="_blank" rel="noopener noreferrer">
               <Instagram size={40} />
             </a>
-            <a href="https://www.linkedin.com/in/osaid-travel-7644a3341/" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/company/osaidtravel" target="_blank" rel="noopener noreferrer">
               <Linkedin size={40} />
+            </a>
+            <a href="https://threads.com/osaidtravel" target="_blank" rel="noopener noreferrer">
+              <Share2 size={40} />
             </a>
           </div>
         </div>

@@ -230,8 +230,10 @@ export default function ContactSection() {
                 <MapPin size={24} />
               </div>
               <div>
-                <p>14th Adam Jee Road Rizwan Arcade 3rd Floor</p>
+                <p>1. 14th Adam Jee Road Rizwan Arcade 3rd Floor</p>
                 <small>Saddar, Rawalpindi</small>
+                <p>2. Shop No E1 College Plaza kutchery road Multan </p>
+                <small>Multan, Punjab</small>
               </div>
             </div>
 
@@ -240,7 +242,7 @@ export default function ContactSection() {
                 <Clock size={24} />
               </div>
               <div>
-                <p>Mon - Fri, 9:00-22:00</p>
+                <p>Mon - Fri, 9:00-18:00</p>
                 <small>Working Hours</small>
               </div>
             </div>

@@ -57,19 +57,29 @@
 }
 
 .nav-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
   color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   height: 100%;
   font-size: 19px;
   font-weight: 500;
   transition: all 0.3s ease;
-  padding: 6px 15px;
   width: 100%;
   position: relative;
   z-index: 2; /* Keep text above the hover background */
+}
+
+.nav-link:hover {
+  color: #2563eb;
 }
 
 /* Hover effect - fills entire nav item */
@@ -85,10 +95,6 @@
   z-index: -1; /* Place behind text but above other elements */
 }
 
-.nav-link:hover {
-  color: #0099cc;
-}
-
 .nav-link:hover::before {
   height: 100%; /* Fill the entire height on hover */
 }
@@ -101,7 +107,7 @@
   left: 0;
   width: 100%;
   height: 0;
-  background-color: #0099cc;
+  background-color: #3b2fed;
   transition: all 0.3s ease;
   z-index: 1; /* Above the hover background but below text */
 }
@@ -116,7 +122,7 @@
 }
 
 .contact-link {
-  background-color: #0088a9;
+  background-color: #3f36e8;
   color: white;
   padding: 10px 22px;
   border-radius: 4px;
@@ -246,5 +252,58 @@
     width: 80%;
     height: 39px;
     margin: 0;
+  }
+}
+
+/* Contact button styles */
+.contact-button-container {
+  margin-left: auto;
+  padding: 1rem 1rem;
+  
+  
+  
+}
+
+.contact-link-button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: #3765c8;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contact-link-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .contact-button-container {
+    padding: 1rem;
+    margin-right: 35px;
+    margin-bottom: 18px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 1rem;
+  }
+
+  .contact-link-button {
+    width: 110px;
+    height: 70%;
+    padding: .3rem;
+    margin-right: 20px;
+    background-color: #0636aea1;
+    
+  }
+
+  /* Ensure button appears at the bottom of mobile menu */
+  .nav-menu.active + .contact-button-container {
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
   }
 }

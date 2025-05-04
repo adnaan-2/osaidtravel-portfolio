@@ -1,12 +1,30 @@
 // Navbar.jsx
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css'; // Import your CSS file for styling
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const scrollToSection = (sectionId) => {
+    if (location.pathname !== '/') {
+      // If not on home page, navigate to home then scroll
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   };
 
   return (
@@ -31,25 +49,37 @@ const Navbar = () => {
         {/* Middle - Navigation Links */}
         <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
-            <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
+            <button onClick={() => scrollToSection('home')} className="nav-link">Home</button>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link" onClick={() => setIsOpen(false)}>About</Link>
+            <button onClick={() => scrollToSection('about')} className="nav-link">About</button>
           </li>
           <li className="nav-item">
-            <Link to="/services" className="nav-link" onClick={() => setIsOpen(false)}>Service</Link>
+            <button onClick={() => scrollToSection('services')} className="nav-link">Services</button>
           </li>
           <li className="nav-item">
-            <Link to="/reviews" className="nav-link" onClick={() => setIsOpen(false)}>Reviews</Link>
+            <button onClick={() => scrollToSection('reviews')} className="nav-link">Reviews</button>
           </li>
           <li className="nav-item">
             <Link to="/b2b" className="nav-link" onClick={() => setIsOpen(false)}>B2B</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/blogs" className="nav-link" onClick={() => setIsOpen(false)}>Blogs</Link>
+          </li>
+    
         </ul>
 
         {/* Right - Contact Us */}
-        <div className={isOpen ? 'contact-button active' : 'contact-button'}>
-          <Link to="/contact" className="contact-link" onClick={() => setIsOpen(false)}>Ask Your Query</Link>
+        <div className="contact-button-container">
+          <button 
+            className="contact-link-button" 
+            onClick={() => {
+              scrollToSection('contact');
+              setIsOpen(false); // Close mobile menu if open
+            }}
+          >
+            Ask Your Query
+          </button>
         </div>
       </div>
     </nav>
