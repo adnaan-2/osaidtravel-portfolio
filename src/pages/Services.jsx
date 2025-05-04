@@ -7,7 +7,7 @@ export default function Services() {
       title: "Hajj Services",
       subtitle: "Guiding Your Sacred Journey with Care and Devotion.",
       description: "Osaid Travels offers comprehensive Hajj packages designed to provide peace of mind and spiritual focus. From the moment you register to your return home, our experienced team manages everything including flights, accommodations, local transportation, and rituals support. We aim to make this once-in-a-lifetime journey as smooth, safe, and spiritually rewarding as possible.",
-      image: "hajj1.jpg",
+      image: "hajj2.jpg",
       altText: "Hajj Service",
       features: [
         {
@@ -44,7 +44,7 @@ export default function Services() {
       title: "Umrah Services",
       subtitle: "Your Blessed Umrah, Perfectly Planned.",
       description: "With deep respect for the spiritual importance of Umrah, we provide complete solutions—from visa processing and hotel bookings to guided services near Haram. Whether you're going alone or with family, Osaid Travels makes your pilgrimage comfortable, timely, and worry-free with attention to every sacred detail.",
-      image: "umrah1.jpg",
+      image: "umrah2.jpg",
       altText: "Umrah Service",
       features: [
         {
@@ -81,7 +81,7 @@ export default function Services() {
       title: "Ziyarat Services",
       subtitle: "Walk the Sacred Paths with Us.",
       description: "Visit the revered Islamic heritage sites across cities like Karbala, Najaf, Mashhad, and more. Our Ziyarat packages combine spiritual depth with expert planning, ensuring a meaningful and respectful journey. Let us handle the logistics while you focus on reflection and prayer.",
-      image: "ziarrat1.jpg",
+      image: "ziarrat2.jpg",
       altText: "Ziyarat Service",
       features: [
         {
@@ -118,7 +118,7 @@ export default function Services() {
       title: "Domestic Tours",
       subtitle: "Discover the Beauty of Home with Ease.",
       description: "Explore the hidden gems and famous destinations across your own country with comfort and convenience. From mountains to beaches, heritage cities to adventure spots—our tours are designed to give you unforgettable experiences without going far. Great for families, couples, or solo travelers.",
-      image: "domastic1.jpg",
+      image: "domastic2.jpg",
       altText: "Domestic Tours",
       features: [
         {
@@ -155,7 +155,7 @@ export default function Services() {
       title: "International Tours",
       subtitle: "Explore the World, Effortlessly with Osaid.",
       description: "Travel beyond borders with our all-inclusive international tour packages. Whether it's Europe, Asia, the Middle East or the Americas, we take care of everything—flights, hotels, sightseeing, and visa help—so you can enjoy every destination with peace of mind and excitement.",
-      image: "international1.jpg",
+      image: "international2.jpg",
       altText: "International Tours",
       features: [
         {
