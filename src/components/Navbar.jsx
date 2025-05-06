@@ -12,8 +12,10 @@ const Navbar = () => {
   };
 
   const scrollToSection = (sectionId) => {
+    // Close the menu when a section link is clicked
+    setIsOpen(false);
+    
     if (location.pathname !== '/') {
-      // If not on home page, navigate to home then scroll
       window.location.href = `/#${sectionId}`;
       return;
     }
