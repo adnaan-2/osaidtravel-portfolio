@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import '../styles/Services.css';
 
 export default function Services() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 200
+    });
+    // Refresh AOS when component mounts
+    AOS.refresh();
+  }, []);
+
   const sections = [
     {
       title: "Hajj Services",
@@ -272,7 +284,7 @@ export default function Services() {
           <div className="container">
             <div className="row align-items-stretch service-row">
               {/* Image Section - Always first on mobile */}
-              <div className={`col-12 col-lg-6 mb-4 mb-lg-0 d-flex align-items-stretch order-1 ${section.imageOnLeft ? 'order-lg-1' : 'order-lg-2'}`}>
+              <div className={`col-12 col-lg-6 mb-4 mb-lg-0 d-flex align-items-stretch order-1 ${section.imageOnLeft ? 'order-lg-1' : 'order-lg-2'}`} data-aos={section.imageOnLeft ? "fade-right" : "fade-left"} data-aos-delay="100" data-aos-duration="1000">
                 <div className="service-image-container h-100 w-100">
                   <img 
                     src={section.image} 
@@ -284,7 +296,7 @@ export default function Services() {
               </div>
               
               {/* Content Section - Always second on mobile */}
-              <div className={`col-12 col-lg-6 d-flex flex-column order-2 ${section.imageOnLeft ? 'order-lg-2' : 'order-lg-1'}`}>
+              <div className={`col-12 col-lg-6 d-flex flex-column order-2 ${section.imageOnLeft ? 'order-lg-2' : 'order-lg-1'}`} data-aos={section.imageOnLeft ? "fade-left" : "fade-right"} data-aos-delay="200" data-aos-duration="1000">
                 <div className="p-3 p-md-4 h-100 d-flex flex-column">
                   <h2 className="mb-3 fw-bold">{section.title}</h2>
                   <p className="lead fw-normal text-secondary mb-3">{section.subtitle}</p>

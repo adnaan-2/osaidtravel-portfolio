@@ -1,6 +1,8 @@
 /* Custom styles for Services page */
 .services-page section {
   padding: 5rem 0;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .services-page section:nth-child(odd) {
@@ -214,4 +216,54 @@ img.object-fit-cover {
 
 .package-box:nth-child(1) i {
   color: #10b981; /* Diamond/emerald color */
+}
+
+/* Add to your existing styles */
+
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none; /* Prevent flickering on hover during animation */
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Optional: Add different animations for odd/even sections */
+.services-page section:nth-child(odd) [data-aos="fade-right"] {
+  transform: translateX(-100px);
+}
+
+.services-page section:nth-child(odd) [data-aos="fade-left"] {
+  transform: translateX(100px);
+}
+
+.services-page section:nth-child(even) [data-aos="fade-right"] {
+  transform: translateX(100px);
+}
+
+services-page section:nth-child(even) [data-aos="fade-left"] {
+  transform: translateX(-100px);
+}
+
+/* Reset transforms when animation completes */
+[data-aos].aos-animate {
+  transform: translateX(0) !important;
+}
+
+/* Adjust animation timing for mobile */
+@media (max-width: 768px) {
+  [data-aos] {
+    transition-duration: 800ms !important;
+  }
+}
+
+/* Optimize performance */
+@media screen and (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    transition-duration: 0.001ms !important;
+  }
 }

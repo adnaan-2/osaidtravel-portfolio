@@ -1,9 +1,11 @@
 // App.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Import components
 import Navbar from './components/Navbar';
@@ -14,6 +16,16 @@ import B2B from './pages/B2B';
 import Blogs from './pages/Blogs'; 
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      once: false, // This makes animations repeat
+      mirror: true, // This enables animations when scrolling up
+      anchorPlacement: 'top-bottom' // Trigger animation when top of element hits bottom of viewport
+    });
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />
