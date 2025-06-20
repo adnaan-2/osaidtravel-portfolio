@@ -12,37 +12,37 @@ const ImageGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "about.jpg",
+      src: "g1.jpeg",
       alt: "Northern Pakistan Mountains",
       title: "Hunza Valley Beauty"
     },
     {
       id: 2,
-      src: "b2b.jpg",
+      src: "g2.jpeg",
       alt: "Kaaba during Hajj",
       title: "Sacred Journey"
     },
     {
       id: 3,
-      src: "domastic1.jpg",
+      src: "g3.jpeg",
       alt: "Dubai Skyline",
       title: "International Tours"
     },
     {
       id: 4,
-      src: "hajj1.jpg",
+      src: "g4.jpeg",
       alt: "Skardu Lake",
       title: "Pakistan's Natural Beauty"
     },
     {
       id: 5,
-      src: "me2.jpeg",
+      src: "g5.jpeg",
       alt: "Turkey Cappadocia",
       title: "Cultural Destinations"
     },
     {
       id: 6,
-      src: "r1.jpg",
+      src: "g3.jpeg",
       alt: "Naran Kaghan",
       title: "Adventure Tours"
     }
