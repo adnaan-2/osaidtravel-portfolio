@@ -50,30 +50,6 @@ const blogPosts = [
     image: "ziarrat1.jpg",
     excerpt: "Discover the unexplored beauty of Pakistan's northern paradise beyond popular destinations...",
     content: "The northern areas of Pakistan are a paradise for nature lovers and adventure seekers. While many tourists visit popular spots, we invite you to explore the hidden gems with Osaid Travels. Discover the serene beauty of Fairy Meadows, the crystal-clear waters of Attabad Lake, and the majestic Rakaposhi mountain. Each destination offers a unique experience and a chance to connect with nature. Whether you're hiking through the mountains or exploring the local culture, the northern areas of Pakistan are a must-visit for any traveler. Our expert guides will take you to locations that few tourists ever see, giving you an authentic experience of the true beauty of Northern Pakistan."
-  },
-  {
-    id: 7,
-    title: "Family Holiday Planning Guide: Creating Memorable Vacations",
-    date: "April 19, 2024",
-    image: "family-travel.jpg",
-    excerpt: "Tips for planning the perfect family vacation with children of all ages...",
-    content: "Planning a family vacation can be both exciting and challenging. In this blog, we provide a comprehensive guide to help you plan the perfect family holiday. From choosing the right destination to packing essentials, we'll cover all aspects of family travel. Learn how to find family-friendly accommodations, plan activities that cater to all age groups, and manage travel logistics with children. Our expert tips will help you create a memorable and stress-free vacation for the whole family. Whether you're traveling with toddlers or teenagers, our family holiday planning guide will ensure a smooth and enjoyable trip."
-  },
-  {
-    id: 8,
-    title: "Adventure Tourism Safety Tips: Thrill Seeking with Security",
-    date: "April 16, 2024",
-    image: "adventure-safety.jpg",
-    excerpt: "Essential safety guidelines for adventure seekers and thrill enthusiasts traveling through Pakistan...",
-    content: "Adventure tourism offers thrilling experiences and unforgettable memories. However, safety should always be a top priority. In this blog, we provide essential safety tips for adventure seekers and thrill enthusiasts. From preparing for extreme sports to understanding the risks involved, we'll help you stay safe while enjoying your adventures. Learn about the importance of proper gear, physical fitness, and risk assessment. Whether you're hiking, rock climbing, or participating in water sports, our safety guidelines will ensure you have a safe and enjoyable experience. Remember, adventure tourism is about pushing your limits while staying safe and responsible."
-  },
-  {
-    id: 9,
-    title: "Cultural Tourism Experiences: Connecting with Pakistani Heritage",
-    date: "April 13, 2024",
-    image: "cultural-tourism.jpg",
-    excerpt: "Immerse yourself in diverse cultures through meaningful travel experiences in Pakistan...",
-    content: "Cultural tourism allows travelers to immerse themselves in the rich heritage and traditions of different communities. In this blog, we explore the unique cultural experiences that await you in Pakistan. From participating in local festivals to exploring historical landmarks, cultural tourism offers a deeper understanding of the places you visit. Learn about the customs, traditions, and lifestyles of different cultures and how to engage with them respectfully. Whether you're visiting remote villages or bustling cities, cultural tourism provides meaningful and enriching travel experiences. Discover how to connect with local communities and create lasting memories through cultural exploration."
   }
 ];
 

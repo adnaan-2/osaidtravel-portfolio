@@ -7,6 +7,7 @@ import Services from '../pages/Services';
 import ContactSection from '../pages/Contact';
 import Reviews from '../pages/Reviews';
 import About from '../pages/About'; 
+import Gallery from '../pages/Gallery';
 const Home = () => {
   return (
     <div className="home-container">
@@ -25,7 +26,10 @@ const Home = () => {
       <section id="reviews">
         <Reviews />
       </section>
-      
+      <section id="gallery">
+        <Gallery />
+      </section>
+
       <section id="contact">
         <ContactSection />
       </section>

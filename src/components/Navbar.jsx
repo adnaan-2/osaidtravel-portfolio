@@ -63,6 +63,9 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('reviews')} className="nav-link">Reviews</button>
           </li>
           <li className="nav-item">
+            <button onClick={() => scrollToSection('gallery')} className="nav-link">Gallery</button>
+          </li>
+          <li className="nav-item">
             <Link to="/b2b" className="nav-link" onClick={() => setIsOpen(false)}>B2B</Link>
           </li>
           <li className="nav-item">

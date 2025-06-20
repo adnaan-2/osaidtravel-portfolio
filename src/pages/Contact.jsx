@@ -33,7 +33,7 @@ export default function ContactSection() {
 
     // Replace these with your EmailJS credentials
     emailjs.sendForm(
-      'service_bz08rlr',
+      'service_voplacs',
       'template_dlh3hdo',
       form.current,
       'lbKoFi9Yq0FAtU6Hn'

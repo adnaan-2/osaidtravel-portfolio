@@ -50,6 +50,7 @@
   
   .hero-section p {
     font-size: 1.2rem;
+    margin-left: 70px;
     margin-bottom: 2rem;
     color: #666;
   }
@@ -60,6 +61,7 @@
     padding: 12px 28px;
     border: none;
     border-radius: 4px;
+    margin-right: 200px;
     font-size: 1.1rem;
     cursor: pointer;
     transition: all 0.3s ease;

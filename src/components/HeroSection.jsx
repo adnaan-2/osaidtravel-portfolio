@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import '../styles/Home.css'; // Import your CSS styles
 
 const HeroSection = () => {
-  const navigate = useNavigate();
+ 
   const slides = [
     { image: 'hajj1.jpg', headline: 'Embark on a Sacred Journey of Faith.', text: 'Experience the spiritual journey with our comprehensive Hajj packages Enjoy premium accommodations and transportation services' },
     { image: 'umrah1.jpg', headline: 'Experience Spiritual Serenity with Umrah.', text: 'Visit the most revered sites in Islam with expert guidance Enjoy premium accommodations and transportation services' },
@@ -61,9 +61,7 @@ const HeroSection = () => {
     return () => clearTimeout(timeoutRef.current);
   }, [currentSlide, isHovered, handleSlideChange]);
 
-  const handleContactClick = () => {
-    navigate('/contact');
-  };
+
 
   return (
     <div
@@ -93,7 +91,7 @@ const HeroSection = () => {
               <div className="slide-content">
                 <h1 className="slide-headline hero-color">{slide.headline}</h1>
                 <p className="slide-text hero-color">{slide.text}</p>
-                <button className="slide-button" onClick={handleContactClick}>Contact Now</button>
+                
               </div>
             </div>
           )
