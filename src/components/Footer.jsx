@@ -58,7 +58,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Osaid Travel. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Osaid Travel. All rights reserved to the company.</p>
       </div>
     </footer>
   );
