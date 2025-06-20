@@ -33,7 +33,7 @@ export default function B2BSection() {
     setIsLoading(true);
 
     emailjs.sendForm(
-      'service_bz08rlr',
+      'service_voplacs',
       'template_izt96gi',
       form.current,
       'lbKoFi9Yq0FAtU6Hn'
