@@ -22,15 +22,8 @@ const About = () => {
             <img src="about.jpg" alt="Our Team" />
           </div>
           <div className="about-text">
-            <h2>Osaid Travel & Tours</h2>
             <p>
-            Osaid Travel & Tours has been proudly serving clients since 2014, specializing in Hajj and Umrah services, along with a full range of domestic and international tourism, visa processing, and ticketing services for both domestic and international flights.
-            Headquartered in <u>Rawalpindi</u> with a branch office in <u>Multan</u>. <br />We have built a trusted network through B2B joint ventures with travel agents and agencies across Pakistan. 
-            We also maintain strong partnerships with hotels in the holy cities of Makkah and Madina, ensuring our pilgrims receive reliable, comfortable, 
-            and spiritually enriching experiences. <br />
-            
-            Our mission is to deliver innovative solutions that help our clients achieve their goals and overcome challenges.
-            We believe in building strong relationships based on trust, integrity, and mutual respect.
+           Since 2014, Osaid Travel & Tours has been a trusted name in Hajj and Umrah services, offering seamless visa processing, ticketing, and vibrant domestic and international travel experiences. Based in Rawalpindi with a branch in Multan, we’ve forged dynamic B2B partnerships with travel agents across Pakistan and secured exclusive hotel collaborations in Makkah and Madina for unforgettable pilgrimages. Our mission? To craft innovative, stress-free travel solutions with trust, integrity, and a passion for creating lasting memories.
             </p>
           
           </div>

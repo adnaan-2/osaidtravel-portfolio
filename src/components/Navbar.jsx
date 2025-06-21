@@ -34,9 +34,10 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Left side - Logo */}
         <div className="navbar-logo">
-          <Link to="/">
-            <img src="logo.png" alt="Company Logo" className="logo" />
+          <Link to="home">
+            <img src="logo.png" onClick={() => scrollToSection('home')} alt="Company Logo" className="logo" />
           </Link>
+          
         </div>
 
         {/* Mobile menu hamburger button - explicitly styled */}
