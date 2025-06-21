@@ -4,14 +4,13 @@ import '../styles/Pages.css';
 
 const About = () => {
   const stats = [
-    { number: "1000+", label: "VISA PROCESSED" },
-    { number: "50+", label: "COUNTRIES COVERED" },
+    { number: "100K+", label: "VISA PROCESSED" },
+    { number: "25+", label: "COUNTRIES COVERED" },
     { number: "20+", label: "AIRLINE PARTNERS" },
-    { number: "1000+", label: "HAPPY CLIENTS" },
-    { number: "15+", label: "YEARS EXPERIENCE" },
+    { number: "150K+", label: "HAPPY CLIENTS" },
+    { number: "10+", label: "YEARS EXPERIENCE" },
     { number: "2", label: "Functional Offices" },
-    { number: "11+", label: "YEARS EXPERIENCE" },
-    { number: "40+", label: "Staff Members" },
+    { number: "41", label: "Staff Members" },
   ];
 
   return (
