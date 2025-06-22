@@ -77,27 +77,7 @@ const testimonials = [
 ];
 
 const Reviews = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const testimonialsPerPage = 3;
-  const totalPages = Math.ceil(testimonials.length / testimonialsPerPage);
-  const [isAnimating, setIsAnimating] = useState(false);
   const containerRef = useRef(null);
-
-  // Function to handle next slide
-  const nextSlide = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalPages);
-    setTimeout(() => setIsAnimating(false), 500);
-  };
-
-  // Function to handle previous slide
-  const prevSlide = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalPages) % totalPages);
-    setTimeout(() => setIsAnimating(false), 500);
-  };
 
   // Function to render star ratings
   const renderStars = (rating) => {
@@ -108,16 +88,12 @@ const Reviews = () => {
     ));
   };
 
-  // Get visible testimonials based on current index
-  const getVisibleTestimonials = () => {
-    const startIndex = currentIndex * testimonialsPerPage;
-    return testimonials.slice(startIndex, startIndex + testimonialsPerPage);
-  };
+  // Create continuous chain by duplicating testimonials for seamless loop
+  const continuousTestimonials = [...testimonials, ...testimonials];
 
   return (
     <section className="testimonials-section">
       <div className="testimonials-header">
-  
         <h2>What our Clients Says</h2>
         <p>
           There are many variations of passages of Lorem Ipsum available
@@ -125,44 +101,29 @@ const Reviews = () => {
         </p>
       </div>
 
-      <div 
-        ref={containerRef}
-        className={`testimonials-container ${isAnimating ? 'animating' : ''}`}
-      >
-        {getVisibleTestimonials().map((testimonial) => (
-          <div key={testimonial.id} className="testimonial-card">
-            <div className="testimonial-header">
-              <div className="author-info">
-                <h4>{testimonial.author}</h4>
-                <p className="position">{testimonial.position}</p>
+      <div className="testimonials-wrapper">
+        <div 
+          ref={containerRef}
+          className="testimonials-container continuous"
+        >
+          {continuousTestimonials.map((testimonial, index) => (
+            <div key={`${testimonial.id}-${index}`} className="testimonial-card">
+              <div className="testimonial-header">
+                <div className="author-info">
+                  <h4>{testimonial.author}</h4>
+                  <p className="position">{testimonial.position}</p>
+                </div>
+                <div className="author-avatar">
+                  <img src={testimonial.avatar} alt={testimonial.author} />
+                </div>
               </div>
-              <div className="author-avatar">
-                <img src={testimonial.avatar} alt={testimonial.author} />
+              <p className="testimonial-content">{testimonial.content}</p>
+              <div className="rating">
+                {renderStars(testimonial.rating)}
               </div>
             </div>
-            <p className="testimonial-content">{testimonial.content}</p>
-            <div className="rating">
-              {renderStars(testimonial.rating)}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="testimonial-navigation">
-        <button 
-          className="nav-button prev" 
-          onClick={prevSlide}
-          aria-label="Previous testimonials"
-        >
-          ←
-        </button>
-        <button 
-          className="nav-button next" 
-          onClick={nextSlide}
-          aria-label="Next testimonials"
-        >
-          →
-        </button>
+          ))}
+        </div>
       </div>
     </section>
   );

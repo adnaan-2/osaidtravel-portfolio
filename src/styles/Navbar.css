@@ -32,7 +32,8 @@
 }
 
 .logo {
-  height: 60px;
+  height:81px;
+  margin-top: -17px;
   width: auto;
   animation: logoFlip 1.5s ease-out forwards;
   animation-iteration-count: 1;

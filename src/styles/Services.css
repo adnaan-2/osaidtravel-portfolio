@@ -1,9 +1,6 @@
 /* Custom styles for Services page */
 .services-page section {
   padding: 5rem 0;
-  /* Remove problematic properties causing floating issues */
-  /* will-change: transform, opacity; */
-  /* backface-visibility: hidden; */
 }
 
 .services-page section:nth-child(odd) {
@@ -14,22 +11,25 @@
   height: 100%;
   display: flex;
   align-items: stretch;
+  overflow: hidden;
 }
 
+/* DESKTOP - Full animations enabled */
 .services-page img {
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  transition: box-shadow 0.3s ease; /* Remove transform transition on mobile */
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Remove hover scale on mobile to prevent issues */
-@media (min-width: 769px) {
+/* DESKTOP HOVER EFFECTS - Only on non-touch devices */
+@media (hover: hover) and (pointer: fine) and (min-width: 769px) {
   .services-page img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    transform: scale(1.05) translateZ(0);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
   }
 }
 
@@ -48,6 +48,8 @@
 
 .service-image-wrapper {
   height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 img.object-fit-cover {
@@ -59,7 +61,7 @@ img.object-fit-cover {
   min-height: 400px;
 }
 
-/* Package box styles - fixed for mobile */
+/* Package box styles - DESKTOP ANIMATIONS */
 .packages-container {
   margin-top: 0.5rem;
   margin-bottom: 2rem;
@@ -68,55 +70,110 @@ img.object-fit-cover {
 .package-box {
   background-color: #f8f9fa;
   border: 1px solid #e9ecef;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  transition: box-shadow 0.2s ease-in-out; /* Remove transform transition */
-  border-radius: 8px;
-  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Only allow hover effects on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+.package-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+/* DESKTOP HOVER EFFECTS for package boxes */
+@media (hover: hover) and (pointer: fine) and (min-width: 769px) {
   .package-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-color: #dee2e6;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    border-color: #2563eb;
+  }
+  
+  .package-box:hover::before {
+    left: 100%;
+  }
+  
+  .package-box:hover i {
+    transform: scale(1.2) rotate(5deg);
   }
 }
 
 .package-box i {
   color: #2563eb;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .package-box h4 {
   font-weight: 600;
-  font-size: 0.95rem;
-  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+  transition: color 0.3s ease;
 }
 
 .package-box p {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   margin: 0;
+  color: #6b7280;
+  line-height: 1.4;
 }
 
 .package-box:nth-child(1) i {
   color: #10b981; /* Diamond/emerald color */
 }
 
-/* Mobile responsive fixes - Remove ALL floating animations */
-@media (max-width: 992px) {
+.package-box:nth-child(2) i {
+  color: #f59e0b; /* Gold color */
+}
+
+.package-box:nth-child(3) i {
+  color: #ef4444; /* Premium red */
+}
+
+/* TABLET RESPONSIVE - Reduced animations */
+@media (min-width: 769px) and (max-width: 1024px) {
   .services-page section {
-    padding: 3rem 0;
+    padding: 4rem 0;
+  }
+  
+  .services-page .row.align-items-stretch {
+    min-height: 350px;
+  }
+  
+  .package-box {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .package-box:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* MOBILE RESPONSIVE - NO ANIMATIONS */
+@media (max-width: 768px) {
+  .services-page section {
+    padding: 2.5rem 0;
   }
   
   .service-image-container {
-    height: 350px;
+    height: 280px;
     margin-bottom: 2rem;
   }
   
@@ -147,53 +204,75 @@ img.object-fit-cover {
     padding: 0 1rem;
   }
 
-  .service-row {
-    display: flex;
-    flex-direction: column;
+  /* COMPLETELY DISABLE IMAGE ANIMATIONS ON MOBILE */
+  .services-page img {
+    transition: none !important;
+    transform: none !important;
+    will-change: auto !important;
   }
 
-  .service-row > div {
-    width: 100%;
+  .services-page img:hover {
+    transform: none !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
   }
 
   /* Package container horizontal scroll - stable */
   .packages-container .row {
-    display: flex;
+    display: flex !important;
     flex-direction: row !important;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 0.5rem 0;
-    margin: 0 -0.5rem;
-    -webkit-overflow-scrolling: touch;
-    /* Remove problematic properties */
-    scroll-behavior: auto;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    padding: 1rem 0 !important;
+    margin: 0 -1rem !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-behavior: smooth !important;
+    scroll-snap-type: x mandatory !important;
   }
 
   .packages-container .col-4 {
-    flex: 0 0 auto;
-    width: 160px;
-    padding: 0 0.5rem;
+    flex: 0 0 auto !important;
+    width: 180px !important;
+    padding: 0 0.5rem !important;
+    scroll-snap-align: start !important;
   }
 
-  /* Remove all transform effects on mobile */
+  /* REMOVE ALL ANIMATIONS FROM PACKAGE BOXES ON MOBILE */
   .package-box {
     transform: none !important;
     transition: none !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+    padding: 1rem 0.75rem !important;
+    min-height: 120px !important;
   }
 
   .package-box:hover {
     transform: none !important;
     transition: none !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+  }
+
+  .package-box::before {
+    display: none !important;
+  }
+
+  .package-box i {
+    font-size: 1.5rem !important;
+    transition: none !important;
+    transform: none !important;
+  }
+
+  .package-box i:hover {
+    transform: none !important;
   }
 
   .package-box h4 {
-    font-size: 0.9rem;
-    margin-bottom: 0.25rem;
+    font-size: 0.9rem !important;
+    margin-bottom: 0.25rem !important;
   }
 
   .package-box p {
-    font-size: 0.8rem;
-    margin: 0;
+    font-size: 0.75rem !important;
+    margin: 0 !important;
   }
 
   /* Hide scrollbar but keep functionality */
@@ -207,59 +286,50 @@ img.object-fit-cover {
   }
 }
 
-@media (max-width: 768px) {
+/* EXTRA SMALL MOBILE */
+@media (max-width: 576px) {
   .services-page section {
     padding: 2rem 0;
   }
 
   .service-image-container {
-    height: 300px;
-  }
-
-  /* Completely disable animations on mobile */
-  .services-page img {
-    transition: none !important;
-  }
-
-  .services-page img:hover {
-    transform: none !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .service-image-container {
-    height: 250px;
+    height: 220px;
   }
 
   .services-page .text-content {
     padding: 0 0.5rem;
   }
 
-  .services-page section {
-    padding: 1.5rem 0;
+  .packages-container .col-4 {
+    width: 160px !important;
+  }
+
+  .package-box {
+    padding: 0.75rem 0.5rem !important;
+    min-height: 100px !important;
+  }
+
+  .package-box i {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .package-box h4 {
+    font-size: 0.8rem !important;
+  }
+
+  .package-box p {
+    font-size: 0.7rem !important;
   }
 }
 
-/* AOS Animation fixes - Completely disabled on mobile */
-[data-aos] {
-  opacity: 1; /* Always visible on mobile */
-  transition: none !important; /* No transitions */
-  pointer-events: auto;
-}
-
-[data-aos].aos-animate {
-  opacity: 1;
-  pointer-events: auto;
-  transform: none !important; /* No transforms */
-}
-
-/* Only enable AOS on desktop */
+/* AOS Animation fixes - Desktop only */
 @media (min-width: 769px) {
   [data-aos] {
     opacity: 0;
     transition-property: transform, opacity;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 600ms;
+    transition-duration: 800ms;
   }
 
   [data-aos].aos-animate {
@@ -267,25 +337,34 @@ img.object-fit-cover {
     transform: translateX(0) !important;
   }
 
-  /* Different animations for odd/even sections - Desktop only */
+  /* Enhanced animations for different sections */
   .services-page section:nth-child(odd) [data-aos="fade-right"] {
-    transform: translateX(-50px);
+    transform: translateX(-60px);
   }
 
   .services-page section:nth-child(odd) [data-aos="fade-left"] {
-    transform: translateX(50px);
+    transform: translateX(60px);
   }
 
   .services-page section:nth-child(even) [data-aos="fade-right"] {
-    transform: translateX(50px);
+    transform: translateX(60px);
   }
 
   .services-page section:nth-child(even) [data-aos="fade-left"] {
-    transform: translateX(-50px);
+    transform: translateX(-60px);
+  }
+
+  /* Image specific animations */
+  [data-aos="zoom-in"] {
+    transform: scale(0.8);
+  }
+
+  [data-aos="zoom-in"].aos-animate {
+    transform: scale(1);
   }
 }
 
-/* Completely disable all animations on mobile */
+/* COMPLETELY DISABLE ALL ANIMATIONS ON MOBILE */
 @media (max-width: 768px) {
   [data-aos] {
     opacity: 1 !important;
@@ -301,25 +380,24 @@ img.object-fit-cover {
     animation: none !important;
   }
 
-  /* Disable all hover effects */
+  /* Disable ALL hover effects on mobile */
   .services-page img:hover,
-  .package-box:hover {
+  .package-box:hover,
+  .package-box i:hover {
     transform: none !important;
     transition: none !important;
+    box-shadow: inherit !important;
   }
 }
 
-/* Performance optimization */
+/* Performance optimization for reduced motion */
 @media screen and (prefers-reduced-motion: reduce) {
-  [data-aos] {
-    transition-duration: 0.001ms !important;
-    animation: none !important;
-    transform: none !important;
-  }
-  
+  [data-aos],
   .services-page img,
-  .package-box {
+  .package-box,
+  .package-box i {
     transition: none !important;
+    animation: none !important;
     transform: none !important;
   }
 }
@@ -327,7 +405,8 @@ img.object-fit-cover {
 /* Touch device specific fixes */
 @media (pointer: coarse) {
   .services-page img:hover,
-  .package-box:hover {
+  .package-box:hover,
+  .package-box i:hover {
     transform: none !important;
   }
   
@@ -338,14 +417,34 @@ img.object-fit-cover {
   }
 }
 
-/* iOS Safari specific fixes */
+/* iOS Safari and Android WebView fixes */
 @supports (-webkit-overflow-scrolling: touch) {
-  .service-image-container,
-  .package-box,
+  @media (max-width: 768px) {
+    .service-image-container,
+    .package-box,
+    .services-page img {
+      -webkit-transform: none !important;
+      transform: none !important;
+      -webkit-backface-visibility: visible;
+      backface-visibility: visible;
+      will-change: auto;
+    }
+  }
+}
+
+/* High DPI mobile displays */
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .services-page img {
-    -webkit-transform: none !important;
-    transform: none !important;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Force stable layout on mobile */
+@media (max-width: 768px) {
+  .services-page * {
+    backface-visibility: visible !important;
+    perspective: none !important;
+    transform-style: flat !important;
   }
 }

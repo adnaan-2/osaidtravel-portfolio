@@ -25,7 +25,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
-          <img src="/logo.png" alt="Osaid Travel" className="logo" />
+          <Link to="/">
+            <img src="logo.png" onClick={() => scrollToSection('home')} alt="Company Logo" className="logo" />
+          </Link>
         </div>
         
         <nav className="footer-links">
