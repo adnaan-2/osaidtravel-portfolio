@@ -225,7 +225,7 @@ export default function B2BSection() {
                 <h4>Have Questions?</h4>
                 <p>
                   <i className="bi bi-telephone"></i>
-                  +92 323 5682225
+                  +92 321 1953007
                 </p>
                 <p>
                   <i className="bi bi-envelope"></i>

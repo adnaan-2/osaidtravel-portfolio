@@ -1,5 +1,14 @@
 import { useState, useRef } from 'react';
-import { Mail, User, Type, Phone, MapPin, Clock, MessageCircle } from 'lucide-react';
+import { 
+  FaEnvelope, 
+  FaUser, 
+  FaList, 
+  FaPhone, 
+  FaMapMarkerAlt, 
+  FaClock, 
+  FaWhatsapp,
+  FaCommentDots 
+} from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
@@ -83,15 +92,15 @@ export default function ContactSection() {
         <div className="form-section">
           <div className="form-header">
             <h2>
-              <Mail className="icon" size={24} />
-              Contact Us
+              <FaEnvelope className="icon" size={24} />
+              Ask your query..
             </h2>
             <p>Get in touch with us for your travel needs.</p>
           </div>
 
           <form ref={form} onSubmit={handleSubmit}>
             <div className="input-group">
-              <User className="input-icon" size={20} />
+              <FaUser className="input-icon" size={20} />
               <input
                 type="text"
                 name="name"
@@ -103,7 +112,7 @@ export default function ContactSection() {
             </div>
 
             <div className="input-group">
-              <Mail className="input-icon" size={20} />
+              <FaEnvelope className="input-icon" size={20} />
               <input
                 type="email"
                 name="email"
@@ -115,7 +124,7 @@ export default function ContactSection() {
             </div>
 
             <div className="input-group">
-              <Phone className="input-icon" size={20} />
+              <FaPhone className="input-icon" size={20} />
               <input
                 type="tel"
                 name="phone"
@@ -127,19 +136,19 @@ export default function ContactSection() {
             </div>
 
             <div className="input-group">
-              <MapPin className="input-icon" size={20} />
+              <FaMapMarkerAlt className="input-icon" size={20} />
               <input
                 type="text"
                 name="address"
                 value={formData.address}
                 onChange={handleChange}
-                placeholder="Your address"
+                placeholder="Your city"
                 required
               />
             </div>
 
             <div className="input-group">
-              <Type className="input-icon" size={20} />
+              <FaList className="input-icon" size={20} />
               <select
                 name="category"
                 value={formData.category}
@@ -159,6 +168,7 @@ export default function ContactSection() {
             </div>
 
             <div className="input-group">
+              <FaCommentDots className="input-icon" size={20} />
               <textarea
                 name="message"
                 value={formData.message}
@@ -198,20 +208,20 @@ export default function ContactSection() {
 
           <div className="contact-buttons">
             <a 
-              href="https://wa.me/+923235682225" 
+              href="https://wa.me/+923701953024" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="contact-btn whatsapp"
             >
-              <MessageCircle size={20} />
+              <FaWhatsapp size={20} />
               <span>WhatsApp</span>
             </a>
 
             <a 
-              href="tel:+923235682225" 
+              href="tel:+923701953024" 
               className="contact-btn call"
             >
-              <Phone size={20} />
+              <FaPhone size={20} />
               <span>Call Us</span>
             </a>
 
@@ -219,7 +229,7 @@ export default function ContactSection() {
               href="mailto:osaidtraveltours@gmail.com" 
               className="contact-btn email"
             >
-              <Mail size={20} />
+              <FaEnvelope size={20} />
               <span>Email</span>
             </a>
           </div>
@@ -227,33 +237,33 @@ export default function ContactSection() {
           <div className="contact-info">
             <div className="info-item">
               <div className="info-icon">
-                <MapPin size={24} />
+                <FaMapMarkerAlt size={24} />
               </div>
               <div>
-                <p>1. 14th Adam Jee Road Rizwan Arcade 3rd Floor</p>
-                <small>Saddar, Rawalpindi</small>
-                <p>2. Shop No E1 College Plaza kutchery road Multan </p>
-                <small>Multan, Punjab</small>
+                <p>3rd floor Rizwam Arcade adamjee road <br />Saddar, Rawalpindi</p>
               </div>
             </div>
 
             <div className="info-item">
               <div className="info-icon">
-                <Clock size={24} />
+                <FaClock size={24} />
               </div>
               <div>
-                <p>Mon - Fri, 9:00-18:00</p>
-                <small>Working Hours</small>
+                <p>Mon - Sat, 9:00-18:00</p>
               </div>
             </div>
 
             <div className="info-item">
               <div className="info-icon">
-                <Mail size={24} />
+                <FaPhone size={24} />
               </div>
               <div>
-                <p>info</p>
-                <small>osiadtraveltours@gmail.com</small>
+                <p>Saddar, Rawalpindi Office</p>
+                <small>03701953007</small><br />
+                <small>03701953022</small><br />
+
+                <p>Multan Office</p>
+                <small>03701953014</small><br />
               </div>
             </div>
           </div>

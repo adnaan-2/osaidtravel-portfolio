@@ -1,6 +1,6 @@
 .footer {
   background-color: #f8f9fa;
-  padding: 4rem 0 2rem;
+  padding: 3rem 0 2rem;
   text-align: center;
 }
 
@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:1rem;
+  gap: 2rem;
   padding: 0 2rem;
 }
 
@@ -19,30 +19,15 @@
 }
 
 .footer-logo .logo {
-  height: 100px;
-  background-color: none;
+  height: 80px;
   width: auto;
 }
 
 .footer-links {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.footer-links a {
-  color: #333;
-  text-decoration: none;
-  font-size: 1.3rem;
-  transition: color 0.3s ease;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.footer-links a:hover {
-  color: #007bff;
+  gap: 2rem;
 }
 
 .footer-link {
@@ -50,24 +35,10 @@
   border: none;
   color: #333;
   cursor: pointer;
-  font-size: 1.3rem; /* Slightly smaller base font size */
+  font-size: 1.1rem;
   font-weight: 500;
-  padding: 0.5rem 1rem;
-  transition: color 0.3s ease;
+  padding: 0.5rem;
   text-decoration: none;
-  display: inline-block;
-}
-
-.footer-link:hover {
-  color: #007bff;
- bottom: 3px solid #007bff; /* Added bottom border on hover */
-  transform: translateY(-4px); /* Added lift effect on hover */
-  box-shadow: 0 4px 6px rgba(61, 57, 57, 0.1); /* Added shadow effect on hover */
-  
-}
-
-/* Remove default button styles */
-button.footer-link {
   font-family: inherit;
 }
 
@@ -82,72 +53,84 @@ button.footer-link {
   font-size: 1.2rem;
   color: #333;
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .social-icons {
   display: flex;
-  gap: 2rem;
-  width: 100%;
-  font-size: 32px; /* Increased base size */
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .social-icons a {
-  color: #333;
-  transition: transform 0.3s ease, color 0.3s ease;
+  color: #007bff;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px; /* Fixed width for consistent spacing */
-  height: 48px; /* Fixed height for consistent spacing */
-}
-
-.social-icons a:hover {
-  color: #007bff;
-  transform: translateY(-3px) scale(1.1); /* Added scale effect on hover */
+  font-size: 2rem;
 }
 
 .footer-bottom {
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
   border-top: 1px solid #dee2e6;
 }
 
 .footer-bottom p {
   color: #666;
   font-size: 0.9rem;
+  margin: 0;
 }
 
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
   .footer {
-    padding: 3rem 0 1.5rem;
+    padding: 2rem 0 1.5rem;
   }
 
   .footer-content {
-    gap: 1rem; /* Reduce gap between sections */
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .footer-logo .logo {
+    height: 60px;
   }
 
   .footer-links {
-    flex-direction: column; /* Stack links vertically on mobile */
-    gap: 0.5rem; /* Reduce gap between items */
-    width: 100%; /* Full width on mobile */
-    margin: 1rem 0; /* Reduce margin */
-    
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
   }
 
   .footer-link {
-     
-    padding: 0.75rem; /* More tap-friendly padding */
-    width: 100%; /* Full width buttons */
-    text-align: center; /* Center text */
+    padding: 0.75rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
   }
 
   .social-icons {
-    font-size: 28px; /* Slightly smaller on mobile */
-    gap: 1rem; /* Reduce gap between social icons */
+    gap: 1rem;
+    font-size: 1.8rem;
   }
-  
-  .social-icons a {
-    width: 40px;
-    height: 40px;
+
+  .social-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo .logo {
+    height: 50px;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+
+  .social-icons {
+    font-size: 1.6rem;
+    gap: 0.8rem;
   }
 }

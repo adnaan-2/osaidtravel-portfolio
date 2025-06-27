@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { Facebook, Instagram, Music, Share2 } from 'lucide-react';
+import { FaFacebook, FaInstagram, FaTiktok, FaShareAlt } from 'react-icons/fa';
 import '../styles/Footer.css';
 
 export default function Footer() {
@@ -45,16 +45,16 @@ export default function Footer() {
           <h3 className="social-title">Follow Us</h3>
           <div className="social-icons">
             <a href="https://www.facebook.com/share/1B1QZ4FYLo/" target="_blank" rel="noopener noreferrer">
-              <Facebook size={40} />
+              <FaFacebook size={40} />
             </a>
             <a href="https://www.instagram.com/osaid_106travelandtour/?hl=en" target="_blank" rel="noopener noreferrer">
-              <Instagram size={40} />
+              <FaInstagram size={40} />
             </a>
             <a href="https://www.tiktok.com/@osaidtravel?lang=en" target="_blank" rel="noopener noreferrer">
-              <Music size={40} />
+              <FaTiktok size={40} />
             </a>
             <a href="https://threads.com/osaidtravel" target="_blank" rel="noopener noreferrer">
-              <Share2 size={40} />
+              <FaShareAlt size={40} />
             </a>
           </div>
         </div>
@@ -66,3 +66,4 @@ export default function Footer() {
     </footer>
   );
 }
+
