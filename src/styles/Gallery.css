@@ -24,7 +24,7 @@
   font-size: 1.1rem;
 }
 
-/* Main Slider Styles - FIXED */
+/* Main Slider Styles */
 .gallery-slider {
   margin-bottom: 3rem;
 }
@@ -50,21 +50,15 @@
   height: 100%;
   position: relative;
   cursor: pointer;
-  overflow: hidden; /* Added to prevent zoom overflow */
+  overflow: hidden;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit:contain;
-   /* Center the image */
-  transition: none; /* Removed zoom transition */
-  display:block; /* Ensure proper display */
-}
-
-/* Removed hover zoom effect that was causing issues */
-.slide:hover img {
-  transform: none; /* No zoom on hover */
+  object-fit: contain;
+  transition: none;
+  display: block;
 }
 
 .slide-overlay {
@@ -88,23 +82,23 @@
   font-size: 1.5rem;
 }
 
-/* Navigation Arrows - IMPROVED VISIBILITY */
+/* Navigation Arrows */
 .nav-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.7); /* Darker background for better visibility */
+  background: rgba(0, 0, 0, 0.7);
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  width: 60px; /* Increased size */
-  height: 60px; /* Increased size */
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  z-index: 10; /* Higher z-index */
-  color: white; /* White icon color */
+  z-index: 10;
+  color: white;
 }
 
 .nav-arrow:hover {
@@ -114,14 +108,14 @@
 }
 
 .nav-arrow-left {
-  left: 1.5rem; /* More spacing from edge */
+  left: 1.5rem;
 }
 
 .nav-arrow-right {
-  right: 1.5rem; /* More spacing from edge */
+  right: 1.5rem;
 }
 
-/* Dots Indicator - IMPROVED */
+/* Dots Indicator */
 .dots-container {
   display: flex;
   justify-content: center;
@@ -130,7 +124,7 @@
 }
 
 .dot {
-  width: 14px; /* Slightly larger */
+  width: 14px;
   height: 14px;
   border-radius: 50%;
   border: 2px solid rgba(37, 99, 235, 0.3);
@@ -146,7 +140,7 @@
   transform: scale(1.3);
 }
 
-/* Thumbnail Grid - FIXED */
+/* Thumbnail Grid */
 .thumbnail-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -176,13 +170,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center; /* Center thumbnail images */
-  transition: none; /* Remove zoom effect */
-}
-
-/* Removed thumbnail zoom on hover */
-.thumbnail:hover img {
-  transform: none;
+  object-position: center;
 }
 
 /* Modal Styles */
@@ -210,7 +198,7 @@
 .modal-image {
   max-width: 100%;
   max-height: 80vh;
-  object-fit: contain; /* Keep this for modal to show full image */
+  object-fit: contain;
   border-radius: 8px;
 }
 
@@ -283,6 +271,223 @@
   opacity: 0.8;
 }
 
+/* PACKAGES SECTION - SIMPLIFIED */
+.packages-section {
+  margin-top: 5rem;
+  padding: 3rem 0;
+  background: #f8f9fa;
+  border-radius: 20px;
+}
+
+.packages-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.packages-header h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.packages-header .highlight {
+  color: #007bff;
+}
+
+.packages-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.packages-slider {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.packages-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.packages-track {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.5s ease;
+}
+
+.package-card {
+  flex: 0 0 calc(50% - 1rem);
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.package-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover .package-image img {
+  transform: scale(1.05);
+}
+
+.package-duration {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 123, 255, 0.9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.package-content {
+  padding: 2rem;
+}
+
+.package-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.package-description {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.package-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.feature-tag {
+  background: #f8f9fa;
+  color: #007bff;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #e9ecef;
+}
+
+.package-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.package-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #28a745;
+}
+
+.book-now-btn {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-now-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Package Navigation */
+.package-nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.package-nav-arrow:hover:not(:disabled) {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.package-nav-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.package-nav-left {
+  left: -25px;
+}
+
+.package-nav-right {
+  right: -25px;
+}
+
+.package-dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.package-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.package-dot.active {
+  background: #007bff;
+  transform: scale(1.2);
+}
+
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -294,7 +499,13 @@
   to { transform: scale(1); opacity: 1; }
 }
 
-/* Mobile Responsiveness */
+/* RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+  .package-card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
 @media (max-width: 768px) {
   .gallery-container {
     padding: 2rem 1rem;
@@ -306,6 +517,22 @@
 
   .gallery-header h2 {
     font-size: 2rem;
+  }
+
+  .package-card {
+    flex: 0 0 100%;
+  }
+  
+  .packages-slider {
+    padding: 0 2rem;
+  }
+  
+  .package-nav-left {
+    left: -15px;
+  }
+  
+  .package-nav-right {
+    right: -15px;
   }
 
   .nav-arrow {
@@ -365,5 +592,18 @@
   .nav-arrow {
     width: 45px;
     height: 45px;
+  }
+  
+  .packages-header h2 {
+    font-size: 2rem;
+  }
+  
+  .package-nav-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .packages-slider {
+    padding: 0 1rem;
   }
 }
