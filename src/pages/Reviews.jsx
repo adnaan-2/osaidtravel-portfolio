@@ -4,15 +4,15 @@ import '../styles/Reviews.css';
 const testimonials = [
   {
     id: 1,
-    content: "My Hajj experience with Osaid Travel was truly blessed. The arrangements were perfect, from accommodation near Haram to the guidance during rituals. Their attention to detail made this sacred journey smooth and spiritually fulfilling.",
+    content: "Alhamdulillah, our Hajj trip with Osaid Travel was perfect for my family. Our hotel was just a 5-minute walk from Haram which helped my elderly mother. The staff really understood what we needed and the group leader explained all the rituals clearly. Would definitely recommend them!",
     author: "Umar Sajjad",
-    position: "Northen Area Package",
+    position: "Hajj Package",
     avatar: "r3.jpeg",
     rating: 5
   },
   {
     id: 2,
-    content: "Excellent Umrah services! The hotel was just steps away from Masjid al-Haram, and their representatives were always available for support. The package was worth every penny.",
+    content: "Just returned from Umrah last month. The hotel location was exactly as promised - very close to Masjid al-Haram. What I appreciated most was how their representative helped us with directions when we got lost in Makkah on the first day. Good value for what we paid.",
     author: "Nadeem Ashiq",
     position: "Ummrah Package",
     avatar: "r2.jpeg",
@@ -20,7 +20,7 @@ const testimonials = [
   },
   {
     id: 3,
-    content: "The Ziyarat tour to Karbala and Najaf was incredibly well-organized. The spiritual guides were knowledgeable, and the accommodation arrangements were comfortable. A memorable experience.",
+    content: "Was a bit nervous about booking a Ziyarat tour but Osaid Travel made it so easy. The guide knew all the historical details about Karbala and Najaf which made the experience meaningful. The hotel in Karbala had a few issues with hot water but they sorted it quickly.",
     author: "Hussnain",
     position: "Ziyarat Tour",
     avatar: "r1.jpg",
@@ -28,7 +28,7 @@ const testimonials = [
   },
   {
     id: 4,
-    content: "Our family trip to northern areas was fantastic! The itinerary covered all major spots, hotels were comfortable, and the guide was excellent. Highly recommend their domestic tour packages.",
+    content: "Took my kids to Kashmir last summer with Osaid's family package. The kids loved the jeep safari and the hotel had great views of the mountains. Our driver Imran was friendly and knew all the best photo spots that weren't crowded with tourists.",
     author: "Faisal Manzoor",
     position: "Kashmir Tour",
     avatar: "r4.jpg",
@@ -36,7 +36,7 @@ const testimonials = [
   },
   {
     id: 5,
-    content: "The Europe tour package was amazing! Everything from visa assistance to local transportation was perfectly arranged. The hotels were great and the itinerary covered all major attractions.",
+    content: "My wife and I took the 5-day Lahore-Islamabad-Murree tour package last month. The historical tour of Lahore Fort was excellent, and the guide knew so much about Mughal history. Enjoyed the Mall Road in Murree, though the weekend crowds were a bit much. Great way to explore our own country!",
     author: "Adnan Khalid",
     position: "National Tour",
     avatar: "r5.jpg",
@@ -44,7 +44,7 @@ const testimonials = [
   },
   {
     id: 6,
-    content: "Quick and efficient visa processing for my UK trip. The team handled all documentation professionally and kept me updated throughout the process. Will definitely use their services again.",
+    content: "Just finished a tour to Swat and Kalam with my family. The hotel arrangements in Kalam were better than expected with amazing views of the river. Our guide adjusted the itinerary when the weather turned bad one day, and we still managed to see all the main spots. The roads were rough in some areas but our driver handled it well.",
     author: "Mirza Abubaker",
     position: "National Trip",
     avatar: "r6.jpg",
@@ -52,16 +52,15 @@ const testimonials = [
   },
   {
     id: 7,
-    content: "Got great deals on flight tickets through Osaid Travel. Their quick response and professional handling of last-minute changes was impressive. Reliable ticketing service!",
+    content: "I needed to change my flight date due to a family emergency, and called Osaid at night. They answered right away and got my flight changed with minimal fees. Really appreciated their quick help during a stressful time. Will use them again for sure.",
     author: "Omar Shah",
     position: "Ticketing Service",
     avatar: "r2.jpeg",
     rating: 5
   },
- 
   {
     id: 8,
-    content: "Exceptional service for our corporate travel needs. Their team is professional, responsive, and always finds the best deals. A reliable travel partner for our company.",
+    content: "Our company has been using Osaid for business travel for about 2 years now. They understand our budget constraints and always find good options. Their invoice system is organized which makes it easy for our accounts department. Reliable service overall.",
     author: "Adnan khalil",
     position: "Corporate Travel",
     avatar: "me2.jpeg",
@@ -87,10 +86,10 @@ const Reviews = () => {
   return (
     <section className="testimonials-section">
       <div className="testimonials-header">
-        <h2>What our Clients Says</h2>
+        <h2>What our Clients Say</h2>
         <p>
-          There are many variations of passages of Lorem Ipsum available
-          but the majority have suffered alteration in some form.
+          Here's what travelers have experienced with our services.
+          We pride ourselves on creating memorable journeys for all our clients.
         </p>
       </div>
 
