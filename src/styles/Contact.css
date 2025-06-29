@@ -10,7 +10,7 @@
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(30, 136, 229, 0.1); /* Updated shadow with logo blue */
 }
 
 .b2b-container {
@@ -25,14 +25,14 @@
   gap: 2rem;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(30, 136, 229, 0.1); /* Updated shadow */
   overflow: hidden;
 }
 
 .form-wrapper {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(30, 136, 229, 0.1); /* Updated shadow */
   overflow: hidden;
 }
 
@@ -53,6 +53,10 @@
   justify-content: center;
   gap: 0.5rem;
   color: #333;
+  background: linear-gradient(135deg, #1e88e5 0%, #00acc1 100%); /* Logo gradient text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .input-group {
@@ -65,7 +69,7 @@
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #666;
+  color: #1e88e5; /* Logo blue */
 }
 
 input, textarea {
@@ -74,6 +78,13 @@ input, textarea {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #1e88e5; /* Logo blue */
+  box-shadow: 0 0 0 2px rgba(30, 136, 229, 0.2);
 }
 
 textarea {
@@ -120,33 +131,41 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   color: #666;
+  transition: border-color 0.3s ease;
+}
+
+.file-label:hover {
+  border-color: #1e88e5; /* Logo blue */
 }
 
 .submit-button {
   width: 100%;
   padding: 1rem;
-  background-color: #2563eb;
+  background: linear-gradient(135deg, #1e88e5 0%, #00acc1 100%); /* Logo gradient */
   color: white;
   border: none;
   border-radius: 4px;
   font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
 }
 
 .submit-button:hover {
-  background-color: #1d4ed8;
+  background: linear-gradient(135deg, #1565c0 0%, #00838f 100%); /* Darker gradient */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 136, 229, 0.4);
 }
 
 .submit-button.success {
-  background: #4caf50;
-  background-color: #10b981;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   color: white;
   transform: scale(1.05);
 }
 
 .submit-button.error {
-  background-color: #ef4444;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
   color: white;
   animation: shake 0.5s ease-in-out;
 }
@@ -168,12 +187,12 @@ textarea {
 }
 
 .form-feedback.success {
-  background-color: #10b981;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   color: white;
 }
 
 .form-feedback.error {
-  background-color: #ef4444;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
   color: white;
 }
 
@@ -215,23 +234,37 @@ textarea {
   border-radius: 6px;
   color: white;
   text-decoration: none;
-  transition: opacity 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
 }
 
 .contact-btn:hover {
-  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 136, 229, 0.4);
 }
 
 .whatsapp {
-  background: #25d366;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+}
+
+.whatsapp:hover {
+  background: linear-gradient(135deg, #1aab4c 0%, #0d5d52 100%);
 }
 
 .call {
-  background: #4a90e2;
+  background: linear-gradient(135deg, #1e88e5 0%, #00acc1 100%); /* Logo gradient */
+}
+
+.call:hover {
+  background: linear-gradient(135deg, #1565c0 0%, #00838f 100%);
 }
 
 .email {
-  background: #7c4dff;
+  background: linear-gradient(135deg, #1e88e5 0%, #00acc1 100%); /* Logo gradient */
+}
+
+.email:hover {
+  background: linear-gradient(135deg, #1565c0 0%, #00838f 100%);
 }
 
 .contact-info {
@@ -253,9 +286,10 @@ textarea {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: #4a90e2;
+  background: linear-gradient(135deg, #1e88e5 0%, #00acc1 100%); /* Logo gradient */
   border-radius: 50%;
   color: white;
+  box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
 }
 
 .info-item p {
@@ -280,7 +314,7 @@ textarea {
   gap: 2rem;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(30, 136, 229, 0.1); /* Updated shadow */
   overflow: hidden;
 }
 
@@ -310,7 +344,7 @@ textarea {
 .info-text h3 {
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
-  color: #2563eb;
+  color: #1e88e5; /* Logo blue */
 }
 
 .info-text ul {
@@ -328,19 +362,19 @@ textarea {
 }
 
 .info-text li i {
-  color: #10b981;
+  color: #00acc1; /* Logo teal */
 }
 
 .contact-info {
   background: #fff;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(30, 136, 229, 0.05); /* Updated shadow */
 }
 
 .contact-info h4 {
   margin-bottom: 1rem;
-  color: #2563eb;
+  color: #1e88e5; /* Logo blue */
 }
 
 .contact-info p {
@@ -351,7 +385,7 @@ textarea {
 }
 
 .contact-info i {
-  color: #2563eb;
+  color: #1e88e5; /* Logo blue */
 }
 
 /* Responsive design */

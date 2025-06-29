@@ -29,25 +29,25 @@ const testimonials = [
   {
     id: 4,
     content: "Our family trip to northern areas was fantastic! The itinerary covered all major spots, hotels were comfortable, and the guide was excellent. Highly recommend their domestic tour packages.",
-    author: "Adnan khalil",
+    author: "Faisal Manzoor",
     position: "Kashmir Tour",
-    avatar: "me2.jpeg",
+    avatar: "r4.jpg",
     rating: 5
   },
   {
     id: 5,
     content: "The Europe tour package was amazing! Everything from visa assistance to local transportation was perfectly arranged. The hotels were great and the itinerary covered all major attractions.",
-    author: "Usman Malik",
-    position: "International Tour",
-    avatar: "r3.jpeg",
+    author: "Adnan Khalid",
+    position: "National Tour",
+    avatar: "r5.jpg",
     rating: 5
   },
   {
     id: 6,
     content: "Quick and efficient visa processing for my UK trip. The team handled all documentation professionally and kept me updated throughout the process. Will definitely use their services again.",
-    author: "Zeeshan Ahmed",
-    position: "Visa Services",
-    avatar: "r2.jpeg",
+    author: "Mirza Abubaker",
+    position: "National Trip",
+    avatar: "r6.jpg",
     rating: 5
   },
   {
@@ -58,18 +58,11 @@ const testimonials = [
     avatar: "r2.jpeg",
     rating: 5
   },
+ 
   {
     id: 8,
-    content: "The Dubai package was perfect for our family vacation. Great hotel selection, exciting desert safari, and well-planned city tours. Everything was organized perfectly.",
-    author: "Khaid Nasir",
-    position: "International Tour",
-    avatar: "me2.jpeg",
-    rating: 5
-  },
-  {
-    id: 9,
     content: "Exceptional service for our corporate travel needs. Their team is professional, responsive, and always finds the best deals. A reliable travel partner for our company.",
-    author: "Imran Khan",
+    author: "Adnan khalil",
     position: "Corporate Travel",
     avatar: "me2.jpeg",
     rating: 5

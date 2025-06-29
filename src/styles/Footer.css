@@ -1,7 +1,8 @@
 .footer {
-  background-color: #f8f9fa;
+  background: linear-gradient(135deg, rgba(30, 136, 229, 0.05) 0%, rgba(0, 172, 193, 0.03) 100%);
   padding: 3rem 0 2rem;
   text-align: center;
+  border-top: 1px solid rgba(30, 136, 229, 0.1);
 }
 
 .footer-content {
@@ -21,6 +22,7 @@
 .footer-logo .logo {
   height: 80px;
   width: auto;
+  filter: drop-shadow(0 2px 8px rgba(30, 136, 229, 0.1));
 }
 
 .footer-links {
@@ -33,13 +35,63 @@
 .footer-link {
   background: none;
   border: none;
-  color: #333;
+  color: #1a202c; /* Changed to dark black for better visibility */
   cursor: pointer;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600; /* Increased weight for better visibility */
   padding: 0.5rem;
   text-decoration: none;
   font-family: inherit;
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 6px; /* Added border radius */
+}
+
+.footer-link:hover {
+  color: #1e88e5; /* Logo blue */
+  transform: translateY(-2px);
+  background: rgba(30, 136, 229, 0.08); /* Light background on hover */
+}
+
+/* Improved hover underline effect */
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px; /* Slightly higher position */
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #1e88e5 0%, #00acc1 100%);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 1px;
+}
+
+.footer-link:hover::after {
+  width: 80%; /* Slightly smaller than full width for better look */
+}
+
+/* Auto-disappearing hover effect after click */
+.footer-link:active {
+  transform: translateY(0) scale(0.98);
+  background: rgba(30, 136, 229, 0.15);
+}
+
+.footer-link:active::after {
+  width: 0;
+  transition: all 0.1s ease;
+}
+
+/* Reset hover state after interaction */
+.footer-link:focus {
+  outline: 2px solid #1e88e5;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.footer-link:focus:not(:hover)::after {
+  width: 0;
+  transition: all 0.2s ease;
 }
 
 .footer-social {
@@ -51,9 +103,13 @@
 
 .social-title {
   font-size: 1.2rem;
-  color: #333;
+  color: #1a202c; /* Changed to black for consistency */
   margin-bottom: 0.5rem;
   font-weight: 600;
+  background: linear-gradient(135deg, #1e88e5 0%, #00acc1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .social-icons {
@@ -63,74 +119,277 @@
 }
 
 .social-icons a {
-  color: #007bff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  padding: 8px;
+  border-radius: 50%;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
-.footer-bottom {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #dee2e6;
+/* Facebook - Blue */
+.social-icons a[href*="facebook"] {
+  color: #ffffff !important;
+  background: #1877f2 !important;
+  border: 2px solid #1877f2 !important;
 }
 
-.footer-bottom p {
-  color: #666;
-  font-size: 0.9rem;
-  margin: 0;
+.social-icons a[href*="facebook"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(24, 119, 242, 0.4);
 }
 
-/* MOBILE RESPONSIVE */
+/* Instagram - Gradient */
+.social-icons a[href*="instagram"] {
+  color: #ffffff !important;
+  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045) !important;
+  border: none !important;
+}
+
+.social-icons a[href*="instagram"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(228, 64, 95, 0.4);
+}
+
+/* Twitter/X - Black */
+.social-icons a[href*="twitter"], .social-icons a[href*="x.com"] {
+  color: #ffffff !important;
+  background: #000000 !important;
+  border: 2px solid #000000 !important;
+}
+
+.social-icons a[href*="twitter"]:hover, .social-icons a[href*="x.com"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* LinkedIn - Blue */
+.social-icons a[href*="linkedin"] {
+  color: #ffffff !important;
+  background: #0077b5 !important;
+  border: 2px solid #0077b5 !important;
+}
+
+.social-icons a[href*="linkedin"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
+}
+
+/* YouTube - Red */
+.social-icons a[href*="youtube"] {
+  color: #ffffff !important;
+  background: #ff0000 !important;
+  border: 2px solid #ff0000 !important;
+}
+
+.social-icons a[href*="youtube"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+}
+
+/* WhatsApp - Green */
+.social-icons a[href*="whatsapp"], .social-icons a[href*="wa.me"] {
+  color: #ffffff !important;
+  background: #25d366 !important;
+  border: 2px solid #25d366 !important;
+}
+
+.social-icons a[href*="whatsapp"]:hover, .social-icons a[href*="wa.me"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* TikTok - Black with gradient */
+.social-icons a[href*="tiktok"] {
+  color: #ffffff !important;
+  background: linear-gradient(45deg, #000000, #ff0050) !important;
+  border: none !important;
+}
+
+.social-icons a[href*="tiktok"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 0, 80, 0.4);
+}
+
+/* Telegram - Blue */
+.social-icons a[href*="telegram"], .social-icons a[href*="t.me"] {
+  color: #ffffff !important;
+  background: #0088cc !important;
+  border: 2px solid #0088cc !important;
+}
+
+.social-icons a[href*="telegram"]:hover, .social-icons a[href*="t.me"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 136, 204, 0.4);
+}
+
+/* Snapchat - Yellow */
+.social-icons a[href*="snapchat"] {
+  color: #000000 !important;
+  background: #fffc00 !important;
+  border: 2px solid #fffc00 !important;
+}
+
+.social-icons a[href*="snapchat"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 252, 0, 0.4);
+}
+
+/* Pinterest - Red */
+.social-icons a[href*="pinterest"] {
+  color: #ffffff !important;
+  background: #bd081c !important;
+  border: 2px solid #bd081c !important;
+}
+
+.social-icons a[href*="pinterest"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(189, 8, 28, 0.4);
+}
+
+/* Skype - Blue */
+.social-icons a[href*="skype"] {
+  color: #ffffff !important;
+  background: #00aff0 !important;
+  border: 2px solid #00aff0 !important;
+}
+
+.social-icons a[href*="skype"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 175, 240, 0.4);
+}
+
+/* Discord - Purple */
+.social-icons a[href*="discord"] {
+  color: #ffffff !important;
+  background: #5865f2 !important;
+  border: 2px solid #5865f2 !important;
+}
+
+.social-icons a[href*="discord"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(88, 101, 242, 0.4);
+}
+
+/* Viber - Purple */
+.social-icons a[href*="viber"] {
+  color: #ffffff !important;
+  background: #665cac !important;
+  border: 2px solid #665cac !important;
+}
+
+.social-icons a[href*="viber"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(102, 92, 172, 0.4);
+}
+
+/* Mobile responsive adjustments */
 @media (max-width: 768px) {
-  .footer {
-    padding: 2rem 0 1.5rem;
-  }
-
-  .footer-content {
-    gap: 1.5rem;
-    padding: 0 1rem;
-  }
-
-  .footer-logo .logo {
-    height: 60px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-  }
-
-  .footer-link {
-    padding: 0.75rem;
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-  }
-
   .social-icons {
     gap: 1rem;
-    font-size: 1.8rem;
   }
 
-  .social-title {
-    font-size: 1.1rem;
+  .social-icons a {
+    font-size: 1.5rem;
+    padding: 6px;
   }
 }
 
 @media (max-width: 480px) {
-  .footer-logo .logo {
-    height: 50px;
-  }
-
-  .footer-link {
-    font-size: 0.9rem;
-  }
-
   .social-icons {
-    font-size: 1.6rem;
-    gap: 0.8rem;
+    gap: 2rem;
+  }
+  
+
+  .social-icons a {
+    font-size: 1.3rem;
+    padding: 5px;
   }
 }
+
+@media (max-width: 360px) {
+  .social-icons {
+    gap: 0.5rem;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+    padding: 3px;
+  }
+}
+
+/* REMOVE ALL DARK MODE OVERRIDES FOR SOCIAL ICONS */
+/* The social icons should keep their brand colors in all modes */
+
+/* HOVER EFFECTS FOR DESKTOP */
+@media (min-width: 769px) {
+  .footer-link:hover {
+    background: rgba(30, 136, 229, 0.08);
+    border-radius: 6px;
+  }
+}
+
+/* Enhanced click animations */
+@keyframes clickRipple {
+  0% {
+    transform: scale(1);
+    background: rgba(30, 136, 229, 0.15);
+  }
+  50% {
+    transform: scale(0.95);
+    background: rgba(30, 136, 229, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    background: transparent;
+  }
+}
+
+.footer-link:active {
+  animation: clickRipple 0.3s ease;
+}
+
+/* Auto-hide hover state after interaction */
+.footer-link:not(:hover):not(:focus) {
+  transition: all 0.5s ease;
+}
+
+.footer-link:not(:hover):not(:focus)::after {
+  width: 0 !important;
+  transition: width 0.5s ease;
+}
+
+/* ACCESSIBILITY IMPROVEMENTS */
+.footer-link:focus {
+  outline: 2px solid #1e88e5;
+  outline-offset: 2px;
+  border-radius: 4px;
+  color: #1e88e5;
+}
+
+.social-icons a:focus {
+  outline: 2px solid #1e88e5;
+  outline-offset: 2px;
+}
+
+/* HIGH CONTRAST MODE */
+@media (prefers-contrast: high) {
+  .footer-link {
+    color: #000000 !important;
+    font-weight: 700 !important;
+  }
+  
+  .footer-bottom p {
+    color: #000000 !important;
+  }
+  
+  .social-title {
+    color: #000000 !important;
+  }
+}
+
+/* DARK MODE SUPPORT - UPDATED */
