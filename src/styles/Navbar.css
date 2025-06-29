@@ -370,7 +370,7 @@
 @media (max-width: 480px) {
   /* Even smaller logo for very small screens */
   .logo {
-    height: 75px !important;
+    height: 68px !important;
     margin-top: -12px !important;
   }
 
