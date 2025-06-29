@@ -13,7 +13,8 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import B2B from './pages/B2B';  
-import Blogs from './pages/Blogs'; 
+import Blogs from './pages/Blogs';
+import BlogPost from './components/BlogPost'; // Import the new component
 
 function App() {
   useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/b2b" element={<B2B />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:id" element={<BlogPost />} />
         </Routes>
         <Footer />
       </div>

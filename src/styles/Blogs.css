@@ -36,6 +36,17 @@
   transform: translateY(-5px);
 }
 
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.blog-card-link:hover {
+  transform: translateY(-5px);
+}
+
 .blog-image {
   position: relative;
   height: 200px;

@@ -14,15 +14,15 @@
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
   z-index: 1;
-  overflow: hidden; /* Prevent overflow */
+  overflow: hidden;
 }
 
 .hero-slide.active {
   opacity: 1;
   visibility: visible;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-slide.animating-out {

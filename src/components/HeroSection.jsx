@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-
 import '../styles/Home.css'; // Import your CSS styles
 
 const HeroSection = () => {
@@ -8,7 +7,7 @@ const HeroSection = () => {
     { image: 'hajj1.jpg', headline: 'Embark on a Sacred Journey of Faith.', text: 'Experience the spiritual journey with our comprehensive Hajj packages Enjoy premium accommodations and transportation services' },
     { image: 'umrah1.jpg', headline: 'Experience Spiritual Serenity with Umrah.', text: 'Visit the most revered sites in Islam with expert guidance Enjoy premium accommodations and transportation services' },
     { image: 'ziarrat1.jpg', headline: 'Discover the Blessed Path of Holy Pilgrimage', text: 'Enjoy premium accommodations and transportation services Enjoy premium accommodations and transportation services' },
-    { image: 'domastic1.jpg', headline: 'Explore Pakistan’s Hidden Gems.', text: 'Travel with like-minded believers in our group packages Enjoy premium accommodations and transportation services' },
+    { image: 'domastic1.jpg', headline: 'Explore Pakistan\'s Hidden Gems.', text: 'Travel with like-minded believers in our group packages Enjoy premium accommodations and transportation services' },
     { image: 'international1.jpg', headline: 'Adventure Awaits Beyond Borders.', text: 'Explore sacred sites worldwide with our experienced guides Enjoy premium accommodations and transportation services' }
   ];
 
@@ -34,7 +33,7 @@ const HeroSection = () => {
     setTouchEnd(0);
   };
 
-  // Slide change handler
+  // Slide change handler with smoother transitions
   const handleSlideChange = useCallback((directionOrIndex) => {
     if (animating) return; // Prevent during animation
     setAnimating(true);
@@ -49,19 +48,33 @@ const HeroSection = () => {
       } else if (typeof directionOrIndex === 'number') {
         setCurrentSlide(directionOrIndex);
       }
-      setAnimating(false);
-    }, 300); // Animation duration
+      
+      // Keep animating state a bit longer for smoother exit transition
+      setTimeout(() => {
+        setAnimating(false);
+      }, 100);
+      
+    }, 100); // Animation duration
   }, [animating, currentSlide, slides.length]);
 
-  // Auto rotation
+  // Auto rotation - Changed from 5000ms to 3000ms (3 seconds)
   useEffect(() => {
     if (!isHovered) {
-      timeoutRef.current = setTimeout(() => handleSlideChange('next'), 5000);
+      // Clear any existing timeout
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+      // Set new timeout for 3 seconds
+      timeoutRef.current = setTimeout(() => handleSlideChange('next'), 3000);
     }
-    return () => clearTimeout(timeoutRef.current);
+    
+    // Cleanup function
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
   }, [currentSlide, isHovered, handleSlideChange]);
-
-
 
   return (
     <div
@@ -91,7 +104,6 @@ const HeroSection = () => {
               <div className="slide-content">
                 <h1 className="slide-headline hero-color">{slide.headline}</h1>
                 <p className="slide-text hero-color">{slide.text}</p>
-                
               </div>
             </div>
           )
