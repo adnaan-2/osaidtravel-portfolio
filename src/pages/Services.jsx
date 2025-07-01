@@ -20,7 +20,7 @@ export default function Services() {
       title: "Hajj Services",
       subtitle: "Guiding Your Sacred Journey with Care and Devotion.",
       description: "Osaid Travels offers comprehensive Hajj packages designed to provide peace of mind and spiritual focus. From the moment you register to your return home, our experienced team manages everything including flights, accommodations, local transportation, and rituals support. We aim to make this once-in-a-lifetime journey as smooth, safe, and spiritually rewarding as possible.",
-      image: "hajj2.jpg",
+      image: "hajj2.webp",
       altText: "Hajj Service",
       features: [
         {
