@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import '../styles/Gallery.css';
 
-
 const ImageGallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -13,39 +12,34 @@ const ImageGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "g1.jpeg",
-      alt: "Northern Pakistan Mountains",
-      title: "Hunza Valley Beauty"
+      src: "g7.jpg",
+      alt: "Northern Pakistan Mountain"
+      
     },
     {
       id: 2,
-      src: "g2.jpeg",
-      alt: "Kaaba during Hajj",
-      title: "Sacred Journey"
+      src: "r4.jpg",
+      alt: "Kaaba during Hajj"
     },
     {
       id: 3,
-      src: "g3.jpeg",
-      alt: "Dubai Skyline",
-      title: "International Tours"
+      src: "g1.jpeg",
+      alt: "Dubai Skyline"
     },
     {
       id: 4,
       src: "g4.jpeg",
-      alt: "Skardu Lake",
-      title: "Pakistan's Natural Beauty"
+      alt: "Skardu Lake"
     },
     {
       id: 5,
       src: "g5.jpeg",
-      alt: "Turkey Cappadocia",
-      title: "Cultural Destinations"
+      alt: "Turkey Cappadocia"
     },
     {
       id: 6,
-      src: "g3.jpeg",
-      alt: "Naran Kaghan",
-      title: "Adventure Tours"
+      src: "g6.jpg",
+      alt: "Naran Kaghan"
     }
   ];
 
@@ -114,7 +108,7 @@ const ImageGallery = () => {
                   alt={image.alt}
                   onClick={() => openModal(index)}
                 />
-                <div className="slide-overlay">
+                <div className="slide-caption">
                   <h3>{image.title}</h3>
                 </div>
               </div>

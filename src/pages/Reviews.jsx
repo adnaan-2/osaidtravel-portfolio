@@ -50,16 +50,9 @@ const testimonials = [
     avatar: "r6.jpg",
     rating: 5
   },
+  
   {
     id: 7,
-    content: "I needed to change my flight date due to a family emergency, and called Osaid at night. They answered right away and got my flight changed with minimal fees. Really appreciated their quick help during a stressful time. Will use them again for sure.",
-    author: "Omar Shah",
-    position: "Ticketing Service",
-    avatar: "r2.jpeg",
-    rating: 5
-  },
-  {
-    id: 8,
     content: "Our company has been using Osaid for business travel for about 2 years now. They understand our budget constraints and always find good options. Their invoice system is organized which makes it easy for our accounts department. Reliable service overall.",
     author: "Adnan khalil",
     position: "Corporate Travel",
