@@ -4,11 +4,11 @@ import '../styles/Home.css'; // Import your CSS styles
 const HeroSection = () => {
  
   const slides = [
-    { image: 'hajj1.jpg', headline: 'Embark on a Sacred Journey of Faith.', text: 'Experience the spiritual journey with our comprehensive Hajj packages Enjoy premium accommodations and transportation services' },
-    { image: 'umrah1.jpg', headline: 'Experience Spiritual Serenity with Umrah.', text: 'Visit the most revered sites in Islam with expert guidance Enjoy premium accommodations and transportation services' },
-    { image: 'ziarrat1.jpg', headline: 'Discover the Blessed Path of Holy Pilgrimage', text: 'Enjoy premium accommodations and transportation services Enjoy premium accommodations and transportation services' },
-    { image: 'domastic1.jpg', headline: 'Explore Pakistan\'s Hidden Gems.', text: 'Travel with like-minded believers in our group packages Enjoy premium accommodations and transportation services' },
-    { image: 'international1.jpg', headline: 'Adventure Awaits Beyond Borders.', text: 'Explore sacred sites worldwide with our experienced guides Enjoy premium accommodations and transportation services' }
+    { image: 'hajj1.webp', headline: 'Embark on a Sacred Journey of Faith.', text: 'Experience the spiritual journey with our comprehensive Hajj packages Enjoy premium accommodations and transportation services' },
+    { image: 'umrah1.webp', headline: 'Experience Spiritual Serenity with Umrah.', text: 'Visit the most revered sites in Islam with expert guidance Enjoy premium accommodations and transportation services' },
+    { image: 'ziarrat1.webp', headline: 'Discover the Blessed Path of Holy Pilgrimage', text: 'Enjoy premium accommodations and transportation services Enjoy premium accommodations and transportation services' },
+    { image: 'domastic1.webp', headline: 'Explore Pakistan\'s Hidden Gems.', text: 'Travel with like-minded believers in our group packages Enjoy premium accommodations and transportation services' },
+    { image: 'international1.webp', headline: 'Adventure Awaits Beyond Borders.', text: 'Explore sacred sites worldwide with our experienced guides Enjoy premium accommodations and transportation services' }
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
