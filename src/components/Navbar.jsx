@@ -60,7 +60,12 @@ const Navbar = () => {
         {/* Left side - Logo */}
         <div className="navbar-logo">
           <Link to="/">
-            <img src="logo.png" onClick={() => scrollToSection('home')} alt="Company Logo" className="logo" />
+            <img 
+              src={`${process.env.PUBLIC_URL}/logo.png`} 
+              onClick={() => scrollToSection('home')} 
+              alt="Company Logo" 
+              className="logo" 
+            />
           </Link>
         </div>
 
