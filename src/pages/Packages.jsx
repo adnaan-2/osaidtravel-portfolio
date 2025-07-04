@@ -7,22 +7,9 @@ const PackagesGallery = () => {
 
   // Updated package data with proper gradients and icons
   const packages = [
+    
     {
       id: 1,
-      title: "Hajj Package 2025", // Orange Hajj Package
-      destination: "Makkah & Madinah",
-      duration: "21 Days",
-      price: "218,000",
-      originalPrice: "250,000",
-      rating: 4.9,
-      reviews: 178,
-      departure: "MULTAN - JEDDAH | JEDDAH - MULTAN", // Direct route info
-      features: ["Visa", "Flight Tickets", "Transport", "Accommodation", "Ziyarat"],
-      gradientClass: "gradient-orange",
-      icon: "🕋" // Kaaba icon for Makkah
-    },
-    {
-      id: 2,
       title: "Umrah Package 2025", // Purple Umrah Package
       destination: "Makkah & Madinah",
       duration: "21 Days",
@@ -36,7 +23,7 @@ const PackagesGallery = () => {
       icon: "🕌" // Mosque icon for Madina
     },
     {
-      id: 3,
+      id: 2,
       title: "Umrah Package", // Gold Umrah Package
       destination: "Makkah & Madinah",
       duration: "14 Days",
@@ -50,7 +37,7 @@ const PackagesGallery = () => {
       icon: "🕋" // Kaaba icon
     },
     {
-      id: 4,
+      id: 3,
       title: "Economy Umrah Package", // Teal Umrah Package with multiple options
       destination: "Makkah & Madinah",
       duration: "14 Days",
@@ -69,19 +56,19 @@ const PackagesGallery = () => {
       icon: "🕌" // Mosque icon for Madina
     },
     {
-      id: 5,
+      id: 4,
       title: "Economy Umrah Package", // Last Purple Economy Package
       destination: "Makkah & Madinah",
       duration: "14 Days", // Default duration
-      price: "156,999", // Lowest price point
+      price: "215,000", // Lowest price point
       originalPrice: "180,000",
       rating: 4.7,
       reviews: 165,
-      departure: "Monthly Departures",
+      departure: "ISLAMABAD, JEDDAH, ISLAMABAD",
       features: [
-        "7 Days: PKR 156,999",
-        "14 Days: PKR 169,999",
-        "21 Days: PKR 184,999"
+        "7 Days: PKR 215,000",
+        "14 Days: PKR 230,000",
+        "21 Days: PKR 248,248"
       ], // Showing duration options as features
       gradientClass: "gradient-emerald", // Using emerald gradient
       icon: "🕋" // Kaaba icon
