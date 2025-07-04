@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/Services.css';
-import Packages from '../pages/Packages';
+
 
 export default function Services() {
   useEffect(() => {
@@ -342,7 +342,7 @@ export default function Services() {
         </section>
         
       ))}
-      <Packages />
+      
     </div>
   );
 }

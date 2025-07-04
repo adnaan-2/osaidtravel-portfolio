@@ -1,6 +1,6 @@
 export const blogPosts = [
   {
-    id: 1,
+    id: "21-days-umrah-package-price-from-pakistan-2025", // URL-friendly slug
     title: "21 days Umrah Package Price from Pakistan – 2025",
     date: "2024-06-15",
     image: "umrah-travel-blog.webp",
@@ -11,7 +11,7 @@ export const blogPosts = [
   },
 
   {
-    id: 2,
+    id: "top-international-travel-destinations-2025",  // URL-friendly slug
     title: "Top International Travel Destinations for Pakistanis in 2025",
     date: "2024-05-05",
     image: "international1.jpg",

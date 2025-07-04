@@ -16,7 +16,11 @@ const Navbar = () => {
     setIsOpen(false);
     
     if (location.pathname !== '/') {
-      window.location.href = `/#${sectionId}`;
+      // Modify this line to avoid the hash
+      window.location.href = `/`;
+      
+      // Store the section to scroll to after navigation
+      sessionStorage.setItem('scrollToSection', sectionId);
       return;
     }
 
@@ -26,8 +30,29 @@ const Navbar = () => {
         behavior: 'smooth',
         block: 'start'
       });
+      
+      // Prevent the default hash change
+      window.history.pushState("", document.title, window.location.pathname);
     }
   };
+
+  // Effect to check if we need to scroll after navigation
+  React.useEffect(() => {
+    const sectionToScroll = sessionStorage.getItem('scrollToSection');
+    if (sectionToScroll && location.pathname === '/') {
+      setTimeout(() => {
+        const element = document.getElementById(sectionToScroll);
+        if (element) {
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+        // Clear the stored section
+        sessionStorage.removeItem('scrollToSection');
+      }, 100); // Small delay to ensure the page has loaded
+    }
+  }, [location.pathname]);
 
   return (
     <nav className="navbar">
@@ -37,7 +62,6 @@ const Navbar = () => {
           <Link to="/">
             <img src="logo.png" onClick={() => scrollToSection('home')} alt="Company Logo" className="logo" />
           </Link>
-          
         </div>
 
         {/* Mobile menu hamburger button - explicitly styled */}
@@ -59,6 +83,9 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <button onClick={() => scrollToSection('services')} className="nav-link">Services</button>
+          </li>
+          <li className='nav-item  '>
+            <button onClick={() => scrollToSection('packages')} className="nav-link">Packages</button>
           </li>
           <li className="nav-item">
             <button onClick={() => scrollToSection('reviews')} className="nav-link">Reviews</button>

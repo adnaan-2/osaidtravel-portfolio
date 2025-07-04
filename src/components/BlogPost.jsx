@@ -9,8 +9,12 @@ const BlogPost = () => {
   const [post, setPost] = useState(null);
   
   useEffect(() => {
-    // Find the blog post by ID
-    const currentPost = blogPosts.find(post => post.id === parseInt(id));
+    // Modified to handle both string and numeric IDs
+    const currentPost = blogPosts.find(post => {
+      // Convert both to strings for comparison if needed
+      return post.id.toString() === id.toString();
+    });
+    
     setPost(currentPost);
     
     // Scroll to top when post changes

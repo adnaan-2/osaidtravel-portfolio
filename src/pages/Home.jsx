@@ -8,6 +8,7 @@ import ContactSection from '../pages/Contact';
 import Reviews from '../pages/Reviews';
 import About from '../pages/About'; 
 import Gallery from '../pages/Gallery';
+import Packages from '../pages/Packages'; // Import Packages component
 const Home = () => {
   return (
     <div className="home-container">
@@ -21,6 +22,11 @@ const Home = () => {
       
       <section id="services">
         <Services />
+      </section>
+
+      <section id="packages">
+        <Packages />
+
       </section>
       
       <section id="reviews">

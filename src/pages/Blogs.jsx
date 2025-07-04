@@ -43,16 +43,16 @@ export default function Blogs() {
       </div>
 
       <div className="blogs-grid">
-        {blogPosts.map(post => (
-          <Link to={`/blogs/${post.id}`} key={post.id} className="blog-card-link">
+        {blogPosts.map(blog => (
+          <Link to={`/blogs/${blog.id}`} key={blog.id} className="blog-card">
             <div className="blog-card">
               <div className="blog-image">
-                <img src={`${post.image}`} alt={post.title} />
+                <img src={`${blog.image}`} alt={blog.title} />
                 <button 
                   className="share-button"
                   onClick={(e) => {
                     e.preventDefault(); // Prevent navigation when clicking share
-                    handleShare(post);
+                    handleShare(blog);
                   }}
                   aria-label="Share this blog"
                 >
@@ -62,10 +62,10 @@ export default function Blogs() {
               <div className="blog-content">
                 <div className="blog-date">
                   <Clock size={16} />
-                  {formatDate(post.date)}
+                  {formatDate(blog.date)}
                 </div>
-                <h3>{post.title}</h3>
-                <p className="blog-text">{truncateText(post.excerpt, 120)}</p>
+                <h3>{blog.title}</h3>
+                <p className="blog-text">{truncateText(blog.excerpt, 120)}</p>
                 <span className="read-more">
                   Read More
                 </span>
