@@ -10,7 +10,6 @@ import 'aos/dist/aos.css';
 // Import components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import B2B from './pages/B2B';  
 import Blogs from './pages/Blogs';
@@ -29,7 +28,6 @@ function App() {
 
   return (
     <Router>
-      <ScrollToTop />
       <div className="App">
         <Navbar />
         <Routes>

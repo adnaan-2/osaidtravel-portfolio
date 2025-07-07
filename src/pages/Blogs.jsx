@@ -43,7 +43,7 @@ export default function Blogs() {
       </div>
 
       <div className="blogs-grid">
-        {blogPosts.map(blog => (
+        {blogPosts.map((blog) => (
           <Link to={`/blogs/${blog.id}`} key={blog.id} className="blog-card">
             <div className="blog-card">
               <div className="blog-image">

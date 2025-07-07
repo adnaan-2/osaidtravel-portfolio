@@ -3,27 +3,25 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import '../styles/BlogPost.css';
 import { blogPosts } from '../data/blogData';
+import SEO from './SEO';
 
 const BlogPost = () => {
   const { id } = useParams();
   const [post, setPost] = useState(null);
   
   useEffect(() => {
-    // Modified to handle both string and numeric IDs
+    // Find post by ID (handle both string and numeric IDs)
     const currentPost = blogPosts.find(post => {
-      // Convert both to strings for comparison if needed
-      return post.id.toString() === id.toString();
+      if (typeof post.id === 'number' && typeof id === 'string') {
+        return post.id.toString() === id;
+      }
+      return post.id === id;
     });
     
     setPost(currentPost);
     
     // Scroll to top when post changes
     window.scrollTo(0, 0);
-    
-    // Set page title
-    if (currentPost) {
-      document.title = `${currentPost.title} | Osaid Travels`;
-    }
   }, [id]);
   
   // If post not found
@@ -45,6 +43,18 @@ const BlogPost = () => {
     return new Date(dateString).toLocaleDateString('en-US', options);
   };
   
+  // Get a clean excerpt for meta description
+  const getMetaDescription = (content) => {
+    // If content is HTML, strip tags
+    if (content.trim().startsWith('<')) {
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = content;
+      return tempDiv.textContent.substring(0, 157) + '...';
+    } 
+    // Otherwise use plain text directly
+    return content.substring(0, 157) + '...';
+  };
+
   // Determine if content is HTML or plain text
   const isHtmlContent = (content) => {
     return content.trim().startsWith('<');
@@ -63,41 +73,56 @@ const BlogPost = () => {
     }
   };
 
+  // Create canonical URL
+  const canonicalUrl = `https://osaidtraveltours.com/blogs/${id}`;
+  const imageUrl = `https://osaidtraveltours.com/${post.image}`;
+
   return (
-    <div className="blog-post-container">
-      <div className="blog-post-header">
-        <Link to="/blogs" className="back-to-blogs">
-          <ArrowLeft size={18} />
-          Back to Blogs
-        </Link>
-        <div className="blog-post-meta">
-          <span className="blog-post-date">{formatDate(post.date)}</span>
+    <>
+      {/* Add SEO component */}
+      <SEO
+        title={`${post.title} | Osaid Travel`}
+        description={post.excerpt || getMetaDescription(post.content)}
+        image={imageUrl}
+        url={canonicalUrl}
+        type="article"
+      />
+
+      <div className="blog-post-container">
+        <div className="blog-post-header">
+          <Link to="/blogs" className="back-to-blogs">
+            <ArrowLeft size={18} />
+            Back to Blogs
+          </Link>
+          <div className="blog-post-meta">
+            <span className="blog-post-date">{formatDate(post.date)}</span>
+          </div>
         </div>
-      </div>
-      
-      <h1 className="blog-post-title">{post.title}</h1>
-      
-      <div className="blog-post-featured-image">
-        <img 
-          src={`/${post.image.split('/').pop()}`}
-          alt={post.title}
-        />
-      </div>
-      
-      <div className="blog-post-content-wrapper">
-        <div className="blog-post-content">
-          {renderContent(post.content)}
-          
-          <div className="blog-post-tags">
-            <span className="tag">Travel</span>
-            <span className="tag">{post.title.includes('Pakistan') ? 'Pakistan' : 'International'}</span>
-            {post.title.includes('Umrah') || post.title.includes('Hajj') ? (
-              <span className="tag">Religious</span>
-            ) : null}
+        
+        <h1 className="blog-post-title">{post.title}</h1>
+        
+        <div className="blog-post-featured-image">
+          <img 
+            src={`/${post.image}`}
+            alt={post.title}
+          />
+        </div>
+        
+        <div className="blog-post-content-wrapper">
+          <div className="blog-post-content">
+            {renderContent(post.content)}
+            
+            <div className="blog-post-tags">
+              <span className="tag">Travel</span>
+              <span className="tag">{post.title.includes('Pakistan') ? 'Pakistan' : 'International'}</span>
+              {post.title.includes('Umrah') || post.title.includes('Hajj') ? (
+                <span className="tag">Religious</span>
+              ) : null}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

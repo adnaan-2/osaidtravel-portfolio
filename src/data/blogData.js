@@ -21,7 +21,7 @@ export const blogPosts = [
       "Looking to travel abroad in 2025? Osaid Travels brings you international tour packages that combine comfort, affordability, and adventure.\n\n1. Turkey\nFrom Istanbul's historic mosques to Cappadocia's hot air balloons, our Turkey tour is a cultural dream.\n\n2. United Arab Emirates (UAE)\nVisit Dubai, Abu Dhabi, and Sharjah in luxury. Desert safaris, Burj Khalifa, and shopping festivals await!\n\n3. Malaysia\nEnjoy Langkawi beaches, Kuala Lumpur's skyline, and lush green forests.\n\n4. Thailand\nExperience vibrant Bangkok, Phuket's beaches, and spiritual Chiang Mai.\n\n5. Saudi Arabia (Tourism)\nBesides Umrah, Saudi offers tourism experiences—AlUla, Red Sea Coastline, and Riyadh's modernity.",
   },
   {
-    id: 3,
+    id: "hajj-umrah-guide-2025", // Changed from numeric ID 3
     title: "Hajj and Umrah Guide 2025: Everything You Need to Know",
     date: "2024-05-01",
     image: "umrah1.jpg",
@@ -31,7 +31,7 @@ export const blogPosts = [
       "Hajj and Umrah are spiritual journeys every Muslim dreams of. At Osaid Travels, we ensure a smooth, hassle-free pilgrimage experience with complete support.\n\nUmrah Packages\nWe offer 7, 10, and 14-day packages for Umrah from Pakistan with hotel, transport, and visa assistance included.\n\nHajj Packages 2025\nOur premium and economy Hajj options offer full-board services with guides, religious training, and group coordination.\n\nWhy Choose Us?\n• Licensed and trusted Hajj operator\n• Customizable travel plans\n• Group and family packages available\n\nImportant Note: Book early for 2025 to ensure preferred dates and hotels in Makkah and Madinah.",
   },
   {
-    id: 4,
+    id: "top-10-travel-trends-2025", // Changed from numeric ID 4
     title: "Top 10 Travel Trends in 2025 for Pakistani Tourists",
     date: "2024-04-28",
     image: "b2b.jpg",
@@ -41,7 +41,7 @@ export const blogPosts = [
       "Travel in 2025 is all about personalization, sustainability, and experience. Here are the top travel trends Osaid Travels is following to give you an unforgettable trip:\n\n1. Eco-Friendly Tours\nNorthern Pakistan eco-resorts and green transport are in demand.\n\n2. Visa-Free Destinations\nExplore countries like Maldives, Sri Lanka, and Kenya that offer visa-on-arrival or e-visa for Pakistanis.\n\n3. Digital Nomad Packages\nWork remotely while traveling—our international tours include coworking-friendly hotels and fast Wi-Fi.\n\n4. Luxury + Budget Hybrid Tours\nGet luxury experiences on a budget with our smart package combinations.\n\n5. Family-Focused Itineraries\nTours that keep kids and parents equally entertained.",
   },
   {
-    id: 5,
+    id: "umrah-guide-first-time-pilgrims", // Changed from numeric ID 5
     title:
       "Experience the Magic of Umrah: A Complete Guide for First-Time Pilgrims",
     date: "2024-04-25",
@@ -52,7 +52,7 @@ export const blogPosts = [
       "Umrah is a sacred journey that holds immense spiritual significance in Islam. As you prepare for this blessed pilgrimage, it's essential to understand both the spiritual and practical aspects. The journey begins with the right intention (niyyah) and proper preparation. From selecting the right package to understanding the rituals, every step requires careful consideration. Our expert guides ensure you're well-prepared for this transformative experience. We'll help you navigate through the visa process, accommodation arrangements, and transportation details. Most importantly, we'll guide you through the essential rituals and practices, making your spiritual journey meaningful and rewarding. Remember, Umrah is not just a religious obligation; it's an opportunity for spiritual renewal and peace.",
   },
   {
-    id: 6,
+    id: "hidden-gems-northern-pakistan", // Changed from numeric ID 6
     title: "Hidden Gems of Northern Pakistan: Beyond the Tourist Trail",
     date: "2024-04-22",
     image: "ziarrat1.jpg",
