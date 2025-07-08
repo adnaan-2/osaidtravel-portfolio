@@ -1,23 +1,24 @@
 import { useEffect } from 'react';
 
-const SEO = ({ title, description, image, canonicalUrl }) => {
+const DefaultSEO = () => {
   useEffect(() => {
+    // Default SEO values
+    const title = 'Osaid Travel & Tours | Professional Travel Services in Pakistan';
+    const description = 'Your trusted travel partner for Hajj, Umrah, Ziyarat, and international tours. Professional travel services in Pakistan.';
+    const image = 'https://osaidtraveltours.com/logo.png';
+    const url = 'https://osaidtraveltours.com';
+    
     // Update document title
     document.title = title;
     
     // Find or create meta tags
     const metaTags = {
-      // Standard meta tags
       description: findOrCreateMetaTag('description'),
-      
-      // Open Graph tags
       'og:title': findOrCreateMetaTag('og:title', true),
       'og:description': findOrCreateMetaTag('og:description', true),
       'og:image': findOrCreateMetaTag('og:image', true),
       'og:url': findOrCreateMetaTag('og:url', true),
       'og:type': findOrCreateMetaTag('og:type', true),
-      
-      // Twitter tags
       'twitter:title': findOrCreateMetaTag('twitter:title'),
       'twitter:description': findOrCreateMetaTag('twitter:description'),
       'twitter:image': findOrCreateMetaTag('twitter:image')
@@ -28,8 +29,8 @@ const SEO = ({ title, description, image, canonicalUrl }) => {
     metaTags['og:title'].content = title;
     metaTags['og:description'].content = description;
     metaTags['og:image'].content = image;
-    metaTags['og:url'].content = canonicalUrl;
-    metaTags['og:type'].content = 'article';
+    metaTags['og:url'].content = url;
+    metaTags['og:type'].content = 'website';
     metaTags['twitter:title'].content = title;
     metaTags['twitter:description'].content = description;
     metaTags['twitter:image'].content = image;
@@ -41,9 +42,9 @@ const SEO = ({ title, description, image, canonicalUrl }) => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = canonicalUrl;
+    canonicalLink.href = url;
     
-  }, [title, description, image, canonicalUrl]);
+  }, []);
   
   // Helper function to find or create meta tags
   const findOrCreateMetaTag = (name, isProperty = false) => {
@@ -70,4 +71,4 @@ const SEO = ({ title, description, image, canonicalUrl }) => {
   return null; // This component doesn't render anything
 };
 
-export default SEO;
+export default DefaultSEO;

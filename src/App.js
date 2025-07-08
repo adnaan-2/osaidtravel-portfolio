@@ -13,21 +13,23 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import B2B from './pages/B2B';  
 import Blogs from './pages/Blogs';
-import BlogPost from './components/BlogPost'; // Import the new component
+import BlogPost from './components/BlogPost';
+import DefaultSEO from './components/DefaultSEO';
 
 function App() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
       offset: 100,
-      once: false, // This makes animations repeat
-      mirror: true, // This enables animations when scrolling up
-      anchorPlacement: 'top-bottom' // Trigger animation when top of element hits bottom of viewport
+      once: false,
+      mirror: true,
+      anchorPlacement: 'top-bottom'
     });
   }, []);
 
   return (
     <Router>
+      <DefaultSEO />
       <div className="App">
         <Navbar />
         <Routes>
