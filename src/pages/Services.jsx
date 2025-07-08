@@ -94,7 +94,7 @@ export default function Services() {
       title: "Ziyarat Services",
       subtitle: "Walk the Sacred Paths with Us.",
       description: "Visit the revered Islamic heritage sites across cities like Karbala, Najaf, Mashhad, and more. Our Ziyarat packages combine spiritual depth with expert planning, ensuring a meaningful and respectful journey. Let us handle the logistics while you focus on reflection and prayer.",
-      image: "ziarrat2.webp",
+      image: "ziarrat2.jpg",
       altText: "Ziyarat Service",
       features: [
         {
