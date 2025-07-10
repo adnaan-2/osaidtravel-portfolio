@@ -51,7 +51,7 @@ export default function Blogs() {
       </Helmet>
       <div className="blogs-container">
         <div className="blogs-header">
-          <h1>OUR LATEST <span className="highlight">BLOGS</span></h1>
+          <h1>OUR LATEST <span className="highlight">BLOGS HERE!</span></h1>
           <p>Latest travel insights and updates from our experts</p>
         </div>
 
