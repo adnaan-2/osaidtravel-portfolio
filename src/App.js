@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { HelmetProvider } from 'react-helmet-async';
 
 // Import components
 import Navbar from './components/Navbar';
@@ -29,20 +28,18 @@ function App() {
   }, []);
 
   return (
-    <HelmetProvider>
-      <Router>
-        <div className="App">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/b2b" element={<B2B />} />
-            <Route path="/blogs" element={<Blogs />} />
-            <Route path="/blogs/:id" element={<BlogPost />} />
-          </Routes>
-          <Footer />
-        </div>
-      </Router>
-    </HelmetProvider>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/b2b" element={<B2B />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:id" element={<BlogPost />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

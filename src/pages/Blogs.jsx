@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Share2, Clock } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import '../styles/Blogs.css';
 import { blogPosts } from '../data/blogData';
 

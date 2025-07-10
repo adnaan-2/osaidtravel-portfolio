@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import '../styles/BlogPost.css';
 import { blogPosts } from '../data/blogData';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 const BlogPost = () => {
   const { id } = useParams();
