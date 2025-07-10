@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import '../styles/BlogPost.css';
 import { blogPosts } from '../data/blogData';
-import SEO from './SEO'; // Import the SEO component
+import { Helmet } from 'react-helmet-async';
 
 const BlogPost = () => {
   const { id } = useParams();
@@ -60,13 +60,21 @@ const BlogPost = () => {
   
   return (
     <>
-      {/* Add SEO component with dynamic blog post data */}
-      <SEO
-        title={`${post.title} | Osaid Travel & Tours`}
-        description={getMetaDescription()}
-        image={getImageUrl()}
-        canonicalUrl={getCanonicalUrl()}
-      />
+      <Helmet>
+        <title>{`${post.title} | Osaid Travel & Tours`}</title>
+        <meta name="description" content={getMetaDescription()} />
+        <link rel="canonical" href={getCanonicalUrl()} />
+        {/* Open Graph tags */}
+        <meta property="og:title" content={`${post.title} | Osaid Travel & Tours`} />
+        <meta property="og:description" content={getMetaDescription()} />
+        <meta property="og:image" content={getImageUrl()} />
+        <meta property="og:url" content={getCanonicalUrl()} />
+        <meta property="og:type" content="article" />
+        {/* Twitter tags */}
+        <meta name="twitter:title" content={`${post.title} | Osaid Travel & Tours`} />
+        <meta name="twitter:description" content={getMetaDescription()} />
+        <meta name="twitter:image" content={getImageUrl()} />
+      </Helmet>
       
       <div className="blog-post-container">
         <div className="blog-post-header">

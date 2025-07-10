@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { HelmetProvider } from 'react-helmet-async';
 
 // Import components
 import Navbar from './components/Navbar';
@@ -14,7 +15,7 @@ import Home from './pages/Home';
 import B2B from './pages/B2B';  
 import Blogs from './pages/Blogs';
 import BlogPost from './components/BlogPost';
-import DefaultSEO from './components/DefaultSEO';
+
 
 function App() {
   useEffect(() => {
@@ -28,19 +29,20 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <DefaultSEO />
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/b2b" element={<B2B />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blogs/:id" element={<BlogPost />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/b2b" element={<B2B />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/:id" element={<BlogPost />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 

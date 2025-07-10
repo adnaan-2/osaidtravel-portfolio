@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://osaidtraveltours.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://osaidtraveltours.com/blogs</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://osaidtraveltours.com/b2b</loc>
+    <priority>0.7</priority>
+  </url>
+  <!-- Blog posts -->
+  <url>
+    <loc>https://osaidtraveltours.com/blogs/list-of-ziyarat-places-in-madina-complete-guide</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://osaidtraveltours.com/blogs/21-days-umrah-package-price-from-pakistan-2025</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://osaidtraveltours.com/blogs/top-international-travel-destinations-2025</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://osaidtraveltours.com/blogs/hajj-umrah-guide-2025</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://osaidtraveltours.com/blogs/top-10-travel-trends-2025</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://osaidtraveltours.com/blogs/umrah-guide-first-time-pilgrims</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://osaidtraveltours.com/blogs/hidden-gems-northern-pakistan</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>
