@@ -257,7 +257,7 @@ Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) 
     id: "top-international-travel-destinations-2025",
     title: "Top International Travel Destinations for Pakistanis in 2025",
     date: "2024-05-05",
-    image: "international1.jpg",
+    image: "international1.webp",
     excerpt:
       "Plan your next international holiday with Osaid Travels. Explore trending destinations like Turkey, UAE, Malaysia, and more...",
     content: `<h1>Top International Travel Destinations for Pakistanis in 2025</h1>
@@ -285,7 +285,7 @@ Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) 
     id: "hajj-umrah-guide-2025",
     title: "Hajj and Umrah Guide 2025: Everything You Need to Know",
     date: "2024-05-01",
-    image: "umrah1.jpg",
+    image: "umrah1.webp",
     excerpt:
       "Planning Hajj or Umrah in 2025? Get complete travel services, visa support, and expert guidance with Osaid Travels...",
     content: `<h1>Hajj and Umrah Guide 2025: Everything You Need to Know</h1>
@@ -315,7 +315,7 @@ Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) 
     id: "top-10-travel-trends-2025",
     title: "Top 10 Travel Trends in 2025 for Pakistani Tourists",
     date: "2024-04-28",
-    image: "b2b.jpg",
+    image: "b2b.webp",
     excerpt:
       "From eco-tourism to digital nomad travel, discover the latest travel trends for Pakistani tourists in 2025...",
     content: `<h1>Top 10 Travel Trends in 2025 for Pakistani Tourists</h1>
@@ -358,7 +358,7 @@ Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) 
     id: "umrah-guide-first-time-pilgrims",
     title: "Experience the Magic of Umrah: A Complete Guide for First-Time Pilgrims",
     date: "2024-04-25",
-    image: "hajj1.jpg",
+    image: "hajj1.webpjpg",
     excerpt:
       "Discover the spiritual journey and essential preparations for your blessed Umrah pilgrimage...",
     content: `<h1>Experience the Magic of Umrah: A Complete Guide for First-Time Pilgrims</h1>
@@ -393,7 +393,7 @@ Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) 
     id: "hidden-gems-northern-pakistan",
     title: "Hidden Gems of Northern Pakistan: Beyond the Tourist Trail",
     date: "2024-04-22",
-    image: "ziarrat1.jpg",
+    image: "ziarrat1.webp",
     excerpt:
       "Discover the unexplored beauty of Pakistan's northern paradise beyond popular destinations...",
     content: `<h1>Hidden Gems of Northern Pakistan: Beyond the Tourist Trail</h1>
