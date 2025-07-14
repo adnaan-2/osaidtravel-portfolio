@@ -1,11 +1,11 @@
 export const blogPosts = [
   {
-    id: "list-of-ziyarat-places-in-madina-complete-guide",
-    title: "List Of Ziyarat Places In Madina (Complete Guide)",
+    id: "list-of-ziyarat-places-in-madina-complete-guide-2025",
+    title: "List Of Ziyarat Places In Madina Complete Guide - 2025",
     date: "2024-07-10",
     image: "ziyarat-pictures.jpg",
-    excerpt: "Discover the most important Ziyarat places in Madina including Masjid Al-Nabawi, Jannat Al-Baqi, Quba Mosque, and other sacred sites. Complete guide for Hajj and Umrah pilgrims visiting Madina.",
-    content: `<h1>List Of Ziyarat Places In Madina (Complete Guide)</h1>
+    excerpt: "As part of your Ziyarat responsibilities during your pilgrimage, you should think about including the following must-see holy sites in your itinerary.",
+    content: `<h1>"List Of Ziyarat Places In Madina Complete Guide - 2025</h1>
 
 <p>Ziyarat of Madina consists of many sacred sites such as the Rawdah of Muhammad (SAW) and historical Masajids. Individuals who perform Hajj or Umrah typically visit Madina as well. Madina is considered the hub of Islamic civilization and culture. The Rawdah of Prophet Muhammad (SAW) is in Madina, giving it enormous significance for Muslims worldwide. The city of Madina was a refuge when Prophet Muhammad (SAW) migrated from Makkah, and it became the abode of Ahl-ul-Bait. Osaid Travels has prepared this comprehensive guide for pilgrims who want to visit Madina Ziyarats during their trip to Saudi Arabia.</p>
 
@@ -80,7 +80,7 @@ export const blogPosts = [
     date: "2024-06-15",
     image: "umrah-travel-blog.webp",
     excerpt:
-      "Plan your spiritual journey with our comprehensive 21-day Umrah packages starting from just PKR 220,000. All-inclusive deals from Karachi, Lahore, Islamabad, and Multan with flights, accommodation, and visa processing.",
+      "Osaid Travel offers range of customized Umrah Packages from Pakistan. Umrah Visa, Family Umrah Packages & 7 days, 10 days, 20 days, 30 days umrah packages.",
     content: `<h1>21 days Umrah Package Price from Pakistan – 2025</h1>
 
 <p>A Journey to Spiritual Joy</p>
