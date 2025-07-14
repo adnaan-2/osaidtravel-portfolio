@@ -315,7 +315,7 @@ Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) 
     id: "top-10-travel-trends-2025",
     title: "Top 10 Travel Trends in 2025 for Pakistani Tourists",
     date: "2024-04-28",
-    image: "b2b.webp",
+    image: "umrah2.webp",
     excerpt:
       "From eco-tourism to digital nomad travel, discover the latest travel trends for Pakistani tourists in 2025...",
     content: `<h1>Top 10 Travel Trends in 2025 for Pakistani Tourists</h1>
@@ -358,7 +358,7 @@ Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) 
     id: "umrah-guide-first-time-pilgrims",
     title: "Experience the Magic of Umrah: A Complete Guide for First-Time Pilgrims",
     date: "2024-04-25",
-    image: "hajj1.webpjpg",
+    image: "hajj1.webp",
     excerpt:
       "Discover the spiritual journey and essential preparations for your blessed Umrah pilgrimage...",
     content: `<h1>Experience the Magic of Umrah: A Complete Guide for First-Time Pilgrims</h1>
