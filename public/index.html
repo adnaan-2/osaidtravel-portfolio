@@ -30,24 +30,5 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <script>
-      // Simple SPA dynamic title changer
-      document.addEventListener('DOMContentLoaded', function() {
-        var path = window.location.pathname;
-        var titles = {
-          '/blogs/list-of-ziyarat-places-in-madina-complete-guide': 'List Of Ziyarat Places In Madina (Complete Guide) | Osaid Travel & Tours',
-          '/blogs/21-days-umrah-package-price-from-pakistan-2025': '21 days Umrah Package Price from Pakistan – 2025 | Osaid Travel & Tours',
-          '/blogs/top-international-travel-destinations-2025': 'Top International Travel Destinations for Pakistanis in 2025 | Osaid Travel & Tours',
-          '/blogs/hajj-umrah-guide-2025': 'Hajj and Umrah Guide 2025: Everything You Need to Know | Osaid Travel & Tours',
-          '/blogs/top-10-travel-trends-2025': 'Top 10 Travel Trends in 2025 for Pakistani Tourists | Osaid Travel & Tours',
-          '/blogs/umrah-guide-first-time-pilgrims': 'Experience the Magic of Umrah: A Complete Guide for First-Time Pilgrims | Osaid Travel & Tours',
-          '/blogs/hidden-gems-northern-pakistan': 'Hidden Gems of Northern Pakistan: Beyond the Tourist Trail | Osaid Travel & Tours',
-          // Add more blog routes and titles as needed
-        };
-        if (titles[path]) {
-          document.title = titles[path];
-        }
-      });
-    </script>
   </body>
 </html>
