@@ -315,14 +315,14 @@ Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) 
     id: "top-10-travel-trends-2025",
     title: "Top 10 Travel Trends in 2025 for Pakistani Tourists",
     date: "2024-04-28",
-    image: "umrah2.webp",
+    image: "blog-pic.jpeg",
     excerpt:
       "From eco-tourism to digital nomad travel, discover the latest travel trends for Pakistani tourists in 2025...",
     content: `<h1>Top 10 Travel Trends in 2025 for Pakistani Tourists</h1>
 
 <p>Travel in 2025 is all about personalization, sustainability, and experience. Here are the top travel trends Osaid Travels is following to give you an unforgettable trip:</p>
 
-<h2>1. Eco-Friendly Tours</h2>
+<h2>1. <a href="https://www.osaidtraveltours.com" target="_blank" rel="noopener">Eco-Friendly Tours</a></h2>
 <p>Northern Pakistan eco-resorts and green transport are in demand. Travelers are increasingly conscious about their environmental footprint and seeking sustainable travel options that preserve natural beauty for future generations.</p>
 
 <h2>2. Visa-Free Destinations</h2>
@@ -331,7 +331,7 @@ Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) 
 <h2>3. Digital Nomad Packages</h2>
 <p>Work remotely while traveling—our international tours include coworking-friendly hotels and fast Wi-Fi. The rise of remote work has created new opportunities for extended stays and work-travel balance.</p>
 
-<h2>4. Luxury + Budget Hybrid Tours</h2>
+<h2>4. <a href="https://www.osaidtraveltours.com" target="_blank" rel="noopener">Luxury + Budget Hybrid Tours</a></h2>
 <p>Get luxury experiences on a budget with our smart package combinations. Our carefully crafted itineraries allow travelers to splurge on memorable experiences while saving on less important aspects of the journey.</p>
 
 <h2>5. Family-Focused Itineraries</h2>
@@ -343,7 +343,7 @@ Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) 
 <h2>7. Cultural Immersion</h2>
 <p>Beyond sightseeing, travelers want to experience local cultures through food, music, art, and traditions. Our cultural immersion packages offer authentic experiences and interactions with local communities.</p>
 
-<h2>8. Adventure Tourism</h2>
+<h2>8. <a href="https://www.osaidtraveltours.com" target="_blank" rel="noopener">Adventure Tourism</a></h2>
 <p>From trekking in Northern Pakistan to water sports in coastal areas, adventure tourism continues to grow in popularity. We offer safe and exciting adventure packages for thrill-seekers.</p>
 
 <h2>9. Religious Tourism</h2>
@@ -381,22 +381,15 @@ Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) 
 </ul>
 </p>
 
-<h2>Practical Arrangements</h2>
-<p>We'll help you navigate through the visa process, accommodation arrangements, and transportation details. Our comprehensive services ensure that all practical aspects of your journey are handled professionally, allowing you to focus on worship.</p>
 
-<h2>Spiritual Journey</h2>
-<p>Most importantly, we'll guide you through the essential rituals and practices, making your spiritual journey meaningful and rewarding. Remember, Umrah is not just a religious obligation; it's an opportunity for spiritual renewal and peace.</p>
+    },
+    {
+      id: "hidden-gems-northern-pakistan",
+      title: "Hidden Gems of Northern Pakistan: Beyond the Tourist Trail",
+      date: "2024-04-22",
+      image: "ziarrat1.webp",
+      excerpt: "Discover the unexplored beauty of Pakistan's northern paradise beyond popular destinations...",
 
-<p>For more information about our Umrah packages or to book your spiritual journey, contact <a href="https://www.osaidtraveltours.com">Osaid Travel & Tours</a> today.</p>`,
-  },
-  {
-    id: "hidden-gems-northern-pakistan",
-    title: "Hidden Gems of Northern Pakistan: Beyond the Tourist Trail",
-    date: "2024-04-22",
-    image: "ziarrat1.webp",
-    excerpt:
-      "Discover the unexplored beauty of Pakistan's northern paradise beyond popular destinations...",
-    content: `<h1>Hidden Gems of Northern Pakistan: Beyond the Tourist Trail</h1>
 
 <p>The northern areas of Pakistan are a paradise for nature lovers and adventure seekers. While many tourists visit popular spots, we invite you to explore the hidden gems with Osaid Travels.</p>
 
@@ -416,5 +409,5 @@ Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) 
 <p>The northern areas of Pakistan are a must-visit for any traveler. Our expert guides will take you to locations that few tourists ever see, giving you an authentic experience of the true beauty of Northern Pakistan through secret trekking paths and hidden valleys.</p>
 
 <p>Book your northern Pakistan adventure with <a href="https://www.osaidtraveltours.com">Osaid Travel & Tours</a> today and discover the road less traveled!</p>`
-  },
+    }
 ];
