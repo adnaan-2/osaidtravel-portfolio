@@ -76,27 +76,19 @@ export const blogPosts = [
   },
   {
     id: "21-days-umrah-package-price-from-pakistan-2025",
-    title: "21 days Umrah Package Price from Pakistan – 2025",
+    title: "21 days umrah package from pakistan price - 2025",
     date: "2024-06-15",
     image: "umrah-travel-blog.webp",
-    excerpt:
-      "Osaid Travel offers range of customized Umrah Packages from Pakistan. Umrah Visa, Family Umrah Packages & 7 days, 10 days, 20 days, 30 days umrah packages.",
-    content: `<h1>21 days Umrah Package Price from Pakistan – 2025</h1>
-
+    excerpt: "A Journey to Spiritual Joy. Imagine standing in the serene courtyard of the Kaaba, the gentle breeze of Makkah touching your face, and the spiritual tranquility washing over you. For countless Pakistanis, the dream of performing Umrah is a lifelong aspiration.",
+    content: `
+<h1>21 days umrah package from pakistan price - 2025</h1>
 <p>A Journey to Spiritual Joy</p>
+<p>Imagine standing in the serene courtyard of the Kaaba, the gentle breeze of Makkah touching your face, and the spiritual tranquility washing over you. For countless Pakistanis, the dream of performing Umrah is a lifelong aspiration.</p>
 
-<p>Imagine standing in the serene courtyard of the Kaaba, the gentle breeze of Makkah touching your face, and the spiritual tranquility washing over you. For countless Pakistanis, the dream of performing Umrah is a lifelong aspiration. This dream is now within reach thanks to Osaid Travel, your dependable travel agency with offices in Saddar Rawalpindi and Multan. Our 21 days Umrah package from Pakistan price starts at just PKR 220,000, offering an affordable and unforgettable spiritual journey. Whether you're searching for Umrah packages from Karachi, Umrah packages from Lahore, Umrah packages from Islamabad, or Umrah packages from Multan, we've crafted all-inclusive Umrah packages 2025 Pakistan to make your pilgrimage seamless. Let's examine the details of our Umrah package pricing in Pakistan and how Osaid Travel guarantees that your Umrah expenses from Pakistan are both memorable and reasonably priced.
+<h2>21 Days Umrah Package from Pakistan Price</h2>
+<p>Below is a detailed look at our offerings from major cities, including Umrah packages from Karachi, Umrah packages from Lahore, Umrah packages from Islamabad, and Umrah packages from Multan, tailored to meet your spiritual and budgetary needs.</p>
 
-<h2>Why Choose <a href="https://www.osaidtraveltours.com">Osaid Travel</a> for Your Umrah Journey?</h2>
-
-<p>Osaid Travel, with branches in Saddar Rawalpindi and Multan, is your go-to agency for Umrah packages 2025 Pakistan. We specialize in affordable and reliable Umrah package price in Pakistan, ensuring every pilgrim can fulfill their spiritual goals without breaking the bank. Our 21 days Umrah package from Pakistan price is designed to include flights, visas, accommodation with shuttle service, and guided tours, making your pilgrimage hassle-free. With years of experience, we prioritize comfort, affordability, and spiritual fulfillment for your Umrah package from Pakistan. Whether you're looking for a minimum Umrah package or a premium experience, we cater to all budgets and preferences.</p>
-
-<h2>Breakdown of 21 Days Umrah Package from Pakistan Price</h2>
-
-<p>The 21 days Umrah package from Pakistan price ranges from PKR 220,000 to PKR 328,600, depending on the city of departure and package type. This Umrah package 2025 price in Pakistan covers all essentials, ensuring a smooth journey. Below is a detailed look at our offerings from major cities, including Umrah packages from Karachi, Umrah packages from Lahore, Umrah packages from Islamabad, and Umrah packages from Multan, tailored to meet your spiritual and budgetary needs.</p>
-
-<h3>Umrah Packages from Karachi</h3>
-
+<h3>Umrah Packages from <a href="https://www.osaidtraveltours.com" target="_blank" rel="noopener">Karachi</a></h3>
 <p>Our Umrah packages from Karachi are tailored for convenience and affordability. Priced at PKR 222,000, our Umrah packages 2025 Karachi include:</p>
 <ul>
 <li>Direct flights from Karachi to Jeddah, with competitive Umrah ticket price in Pakistan 2025.</li>
@@ -105,24 +97,20 @@ export const blogPosts = [
 <li>Guided tours in Makkah and Madinah.</li>
 <li>Travel insurance for peace of mind.</li>
 </ul>
-
 <p>Pilgrims on a tight budget will appreciate our cheap Umrah packages from Karachi and economical Umrah packages Karachi, which guarantee high quality without compromising on price. For a smooth experience, book your Umrah packages 2025 Karachi today and embark on a journey with minimal Umrah cost from Pakistan.</p>
 
-<h3>Umrah Packages from Lahore</h3>
-
+<h3>Umrah Packages from <a href="https://www.osaidtraveltours.com" target="_blank" rel="noopener">Lahore</a></h3>
 <p>For pilgrims from Punjab, our Umrah packages from Lahore start at PKR 224,000. Our Umrah packages 2025 Lahore offer:</p>
 <ul>
 <li>Round-trip flights from Lahore, ensuring an affordable Umrah ticket price in Pakistan 2025.</li>
 <li>Comfortable hotels with shuttle service to Haram.</li>
 <li>Umrah visa and travel insurance, including the Saudi Umrah visa fee for Pakistan.</li>
 <li>Guided spiritual tours.</li>
-<li>24/7 support from Osaid Travel's team.</li>
+<li>24/7 support from Osaid Travel’s team.</li>
 </ul>
-
 <p>Our best Umrah packages Lahore are designed for families and individuals seeking a balance of affordability and comfort. Explore our Umrah packages Lahore or Umrah packages from Lahore 2025 for a spiritually enriching journey at a competitive Umrah rate in Pakistan.</p>
 
-<h3>Umrah Packages from Islamabad</h3>
-
+<h3>Umrah Packages from <a href="https://www.osaidtraveltours.com" target="_blank" rel="noopener">Islamabad</a></h3>
 <p>Residents of the capital can opt for our Umrah packages from Islamabad, priced at PKR 225,000. Our Umrah packages 2025 Islamabad include:</p>
 <ul>
 <li>Direct flights from Islamabad to Jeddah, with transparent Umrah ticket price in Pakistan 2025.</li>
@@ -131,11 +119,9 @@ export const blogPosts = [
 <li>Guided tours and spiritual guidance.</li>
 <li>Comprehensive travel insurance.</li>
 </ul>
-
 <p>Our best Umrah packages Islamabad and Umrah packages Islamabad Rawalpindi are ideal for those in the twin cities, ensuring a smooth pilgrimage with a competitive Umrah package price in Pakistan. Book your Umrah packages from Islamabad 2025 today.</p>
 
-<h3>Umrah Packages from Multan</h3>
-
+<h3>Umrah Packages from <a href="https://www.osaidtraveltours.com" target="_blank" rel="noopener">Multan</a></h3>
 <p>For South Punjab pilgrims, our Umrah packages from Multan start at PKR 220,000, making it our minimum Umrah package. Our Umrah packages 2025 Multan include:</p>
 <ul>
 <li>Flights from Multan to Jeddah, with affordable Umrah ticket price in Pakistan 2025.</li>
@@ -144,23 +130,20 @@ export const blogPosts = [
 <li>Guided tours in Makkah and Madinah.</li>
 <li>Dedicated support from our Multan branch.</li>
 </ul>
-
 <p>Our best Umrah packages Multan cater to those seeking economical Umrah packages Multan without sacrificing quality. Book your Umrah packages Multan or Umrah packages from Multan 2025 for a budget-friendly spiritual journey.</p>
 
-<h2>What's Included in Our <a href="https://www.osaidtraveltours.com">Umrah Packages</a> 2025 Pakistan?</h2>
-
-<p>Our Umrah packages 2025 Pakistan are all-inclusive, ensuring a stress-free pilgrimage at an affordable Umrah package price in Pakistan. Here's what you get:</p>
+<h2>What’s Included in Our <a href="https://www.osaidtraveltours.com" target="_blank" rel="noopener">Umrah Packages</a> 2025 Pakistan?</h2>
+<p>Our Umrah packages 2025 Pakistan are all-inclusive, ensuring a stress-free pilgrimage at an affordable Umrah package price in Pakistan. Here’s what you get:</p>
 <ul>
-<li>Flights: Round-trip air tickets from major cities like Karachi, Lahore, Islamabad, and Multan, with competitive Umrah ticket price in Pakistan 2025.</li>
-<li>Accommodation: Comfortable hotels with shuttle service for easy access to Haram in Makkah and Madinah.</li>
-<li>Umrah Visa: We handle the Saudi Umrah visa fee for Pakistan, ranging from PKR 35,000 to PKR 90,000, depending on duration.</li>
-<li>Transportation: Ground transport for ziyarat and inter-city travel.</li>
-<li>Guided Tours: Spiritual tours to sacred sites in Makkah and Madinah.</li>
-<li>Support: 24/7 assistance from Osaid Travel's team in Saddar Rawalpindi and Multan.</li>
+<li>Flights</li>
+<li>Accommodation</li>
+<li>Umrah Visa</li>
+<li>Transportation</li>
+<li>Guided Tours</li>
+<li>Support</li>
 </ul>
 
 <h2>Factors Affecting Umrah Package Price in Pakistan</h2>
-
 <p>The Umrah package price in Pakistan varies depending on several factors:</p>
 <ul>
 <li>Accommodation Type: 2-star, 3-star, or 5-star hotels affect the Umrah cost from Pakistan.</li>
@@ -171,7 +154,6 @@ export const blogPosts = [
 </ul>
 
 <h2>Why 21 Days Umrah Package is Ideal</h2>
-
 <p>A 21 days Umrah package from Pakistan price offers the perfect balance of time and cost. It allows pilgrims to:</p>
 <ul>
 <li>Perform Umrah with ample time for worship and reflection.</li>
@@ -179,11 +161,12 @@ export const blogPosts = [
 <li>Enjoy comfortable accommodation with shuttle service.</li>
 <li>Benefit from guided tours for a deeper spiritual experience.</li>
 </ul>
-
 <p>This duration is ideal for families, elderly pilgrims, or those seeking a relaxed pilgrimage with a competitive Umrah package 2025 price in Pakistan.</p>
 
-<h2>How to Book with <a href="https://www.osaidtraveltours.com">Osaid Travel</a></h2>
+<h1>Why Choose <a href="https://www.osaidtraveltours.com" target="_blank" rel="noopener">Osaid Travel</a> for Your Umrah Journey?</h1>
+<p>Osaid Travel, with branches in Saddar Rawalpindi and Multan, is your go-to agency for Umrah packages 2025 Pakistan. We specialize in affordable and reliable Umrah package price in Pakistan, ensuring every pilgrim can fulfill their spiritual goals without breaking the bank. Our 21 days Umrah package from Pakistan price is designed to include flights, visas, accommodation with shuttle service, and guided tours, making your pilgrimage hassle-free. With years of experience, we prioritize comfort, affordability, and spiritual fulfillment for your Umrah package from Pakistan. Whether you’re looking for a minimum Umrah package or a premium experience, we cater to all budgets and preferences.</p>
 
+<h2>How to Book with <a href="https://www.osaidtraveltours.com" target="_blank" rel="noopener">Osaid Travel</a></h2>
 <p>Booking your Umrah package from Pakistan with Osaid Travel is simple:</p>
 <ol>
 <li>Visit our branches in Saddar Rawalpindi or Multan.</li>
@@ -191,67 +174,25 @@ export const blogPosts = [
 <li>Provide necessary documents for Umrah visa processing, including the Saudi Umrah visa fee for Pakistan.</li>
 <li>Confirm your booking and prepare for your spiritual journey.</li>
 </ol>
-
 <p>Contact us today to secure your minimum Umrah package or customize your Umrah packages 2025 Pakistan for a tailored experience at an affordable Umrah rate in Pakistan.</p>
 
 <h2>Tips for a Smooth Umrah Journey</h2>
-
 <ul>
 <li>Book Early: Secure the best Umrah package price in Pakistan by booking early.</li>
 <li>Check Visa Requirements: Ensure your documents meet the Saudi Umrah visa fee for Pakistan criteria.</li>
 <li>Pack Light: Focus on essentials for a comfortable trip.</li>
 <li>Stay Hydrated: Makkah and Madinah can be warm, so stay hydrated.</li>
-<li>Follow Guidelines: Adhere to Osaid Travel's instructions for a seamless Umrah cost from Pakistan experience.</li>
+<li>Follow Guidelines: Adhere to Osaid Travel’s instructions for a seamless Umrah cost from Pakistan experience.</li>
 </ul>
-
-<h2>Start Your Spiritual Journey with <a href="https://www.osaidtraveltours.com">Osaid Travel</a></h2>
-
-<p>At Osaid Travel, we believe every pilgrim deserves an affordable and memorable Umrah experience. Our 21 days Umrah package from Pakistan price starts at PKR 220,000, offering unbeatable value for Umrah packages 2025 Pakistan. With branches in Saddar Rawalpindi and Multan, we're here to guide you every step of the way. Book your Umrah package from Pakistan today and embark on a journey of faith and peace with the best Umrah package price in Pakistan.</p>
 
 <h2>Frequently Asked Questions</h2>
-
-<p><strong>What is the cost of Umrah from Pakistan in 2025?</strong><br>
-Economy Umrah Package prices in PKR per person:</p>
 <ul>
-<li>1400m from Makkah Hotel, 900m from Madinah Hotel: 220,000</li>
-<li>900m from Makkah Hotel, 1000m from Madinah Hotel: 230,000</li>
-<li>600m from Makkah Hotel, 1100m from Madinah Hotel: 240,000</li>
-<li>1100m from Makkah Hotel, 450m from Madinah Hotel: 250,000</li>
+<li><strong>What is the cost of Umrah from Pakistan in 2025?</strong><br>Economy Umrah Package<br>Makkah Hotel: 1400m<br>Madinah Hotel: 900m<br>Prices in PKR Per Person: 22,000</li>
+<li><strong>What is the age limit for Umrah 2025?</strong><br>Unlike previous years, there are no age limitations in 2025. Even children under 12 can now perform Umrah, provided they are registered with a guardian and have obtained a permit. Pilgrims must show proof of COVID-19 and meningitis vaccination, administered at least 10 days before departure.</li>
+<li><strong>Which is the cheapest month for Umrah?</strong><br>Best Months: November to February, and Ramadan are ideal for Umrah. Less Crowded Times: Muharram and Safar, post-Hajj, offer fewer crowds and lower prices. Cost-Effective Months: December, April, May, and September are the most affordable. Weather Considerations: December to February offer pleasant weather conditions.</li>
+<li><strong>Best Time to Perform Umrah in 2025?</strong><br>Winter Months (December – February): Winter is the best time to travel for the holy rituals.<br>After Hajj (Muharram and Safar)<br>Summer (May-August)<br>Perform Umrah in Ramadan</li>
 </ul>
-
-<p><strong>What is the age limit for Umrah 2025?</strong><br>
-Unlike previous years, there are no age limitations in 2025. Even children under 12 can now perform Umrah, provided they are registered with a guardian and have obtained a permit. Pilgrims must show proof of COVID-19 and meningitis vaccination, administered at least 10 days before departure.</p>
-
-<p><strong>Which is the cheapest month for Umrah?</strong><br>
-Best Months: November to February, and Ramadan are ideal for Umrah. Less Crowded Times: Muharram and Safar, post-Hajj, offer fewer crowds and lower prices. Cost-Effective Months: December, April, May, and September are the most affordable. Weather Considerations: December to February offer pleasant weather conditions.</p>
-
-<p><strong>Best Time to Perform Umrah in 2025?</strong><br>
-Winter Months (December – February): Winter is the best time to travel for the holy rituals.<br>
-After Hajj (Muharram and Safar)<br>
-Summer (May-August)<br>
-Perform Umrah in Ramadan<br>
-OSAID Travel Offers 3-Star Umrah Packages.</p>
-
-<p><strong>Can a 70 year old go to Umrah?</strong><br>
-Umrah Age Restrictions: According to authorities, the pilgrim who wants to perform Umrah within the kingdom must be between the ages of 18 and 70. The age restrictions for the Umrah pilgrims outside the kingdom was between the Age of 18 and 65.</p>
-
-<p><strong>Which day is best for Umrah?</strong><br>
-The recommended days to do Umrah are: As per estimation, it is considered that 3 weekdays are less crowded, including Sunday, Tuesday, and Wednesday. Friday is too crowded because locals also prefer to perform Umrah on Friday. Friday is a holiday in Saudi Arabia, which is why there are too many visitors.</p>
-
-<p><strong>How much is a meal in Makkah?</strong><br>
-Average living costs in Saudi Arabia:</p>
-<ul>
-<li>Meal, Inexpensive Restaurant: 25.00 ﷼ (Range: 15.00-50.00)</li>
-<li>Meal for 2 People, Mid-range Restaurant, Three-course: 150.00 ﷼ (Range: 100.00-300.00)</li>
-<li>McMeal at McDonalds (or Equivalent Combo Meal): 28.00 ﷼ (Range: 25.00-34.00)</li>
-<li>Domestic Beer (1 pint draught): 6.00 ﷼ (Range: 4.00-12.00)</li>
-</ul>
-
-<p><strong>Can a 7 year old do Umrah?</strong><br>
-Umrah is forbidden for children under the age of 12. Above this age, they will be able to return to the Haram with a tourist visa. However, to obtain a Umrah visa, only children over the age of 18 will be able to obtain it.</p>
-
-<p><strong>Is Masjid Ayesha a Miqat?</strong><br>
-Masjid Ayesha is one of the designated Miqats (places for putting on the Ihram) for pilgrims traveling to Mecca. The mosque is named after Ayesha, one of the wives of Prophet Muhammad, who is said to have stopped at this location to put on the Ihram before performing Umrah.</p>`,
+`
   },
   {
     id: "top-international-travel-destinations-2025",
