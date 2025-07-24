@@ -9,44 +9,11 @@ import 'aos/dist/aos.css';
 
 // Import components
 import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
-// import Home from './pages/Home';
-// import B2B from './pages/B2B';  
-// import Blogs from './pages/Blogs';
-// import BlogPost from './components/BlogPost';
-import NotFound from './pages/NotFound';
-
-
-// function App() {
-//   useEffect(() => {
-//     AOS.init({
-//       duration: 1000,
-//       offset: 100,
-//       once: false,
-//       mirror: true,
-//       anchorPlacement: 'top-bottom'
-//     });
-//   }, []);
-
-//   return (
-//     <Router>
-//       <div className="App">
-//         <Navbar />
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/b2b" element={<B2B />} />
-//           <Route path="/blogs" element={<Blogs />} />
-//           <Route path="/blogs/:id" element={<BlogPost />} />
-//           <Route path="*" element={<NotFound />} />
-//         </Routes>
-//         <Footer />
-//       </div>
-//     </Router>
-//   );
-// }
-
-// export default App;
-
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import B2B from './pages/B2B';  
+import Blogs from './pages/Blogs';
+import BlogPost from './components/BlogPost';
 
 
 function App() {
@@ -65,13 +32,17 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/b2b" element={<B2B />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:id" element={<BlogPost />} />
           
-          <Route path="*" element={<NotFound />} />
         </Routes>
-        
+        <Footer />
       </div>
     </Router>
   );
 }
 
 export default App;
+
